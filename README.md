@@ -36,7 +36,6 @@ The project is structured as a production-style Android app with Firebase Authen
 <p align="center">
   <img src="docs/screenshots/13_login_screen.png" alt="Login screen" width="220" />
   <img src="docs/screenshots/14_create_account_screen.png" alt="Create account screen" width="220" />
-  <img src="docs/screenshots/01_profile_dashboard.png" alt="Profile dashboard" width="220" />
 </p>
 
 <p align="center">
@@ -47,13 +46,19 @@ The project is structured as a production-style Android app with Firebase Authen
 
 <p align="center">
   <img src="docs/screenshots/05_ai_camera_scan.png" alt="AI camera scan" width="220" />
+  <img src="docs/screenshots/15_scan_analysis_result.jpeg" alt="AI scan analysis result" width="220" />
   <img src="docs/screenshots/06_style_remix_generator.png" alt="Style remix generator" width="220" />
-  <img src="docs/screenshots/07_gap_analyzer_inventory.png" alt="Gap analyzer inventory" width="220" />
 </p>
 
 <p align="center">
+  <img src="docs/screenshots/07_gap_analyzer_inventory.png" alt="Gap analyzer inventory" width="220" />
   <img src="docs/screenshots/08_ai_event_advisor.png" alt="AI event advisor" width="220" />
   <img src="docs/screenshots/09_ai_chat_stylist.png" alt="AI chat stylist" width="220" />
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/10_wardrobe_item_detail.png" alt="Wardrobe item detail" width="220" />
+  <img src="docs/screenshots/01_profile_dashboard.png" alt="Profile dashboard" width="220" />
   <img src="docs/screenshots/12_logout_confirmation.png" alt="Logout confirmation" width="220" />
 </p>
 

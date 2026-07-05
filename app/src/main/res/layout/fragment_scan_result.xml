@@ -133,6 +133,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:text="ADD TO DIGITAL CLOSET"
+                android:gravity="center"
+                android:maxLines="2"
                 android:backgroundTint="@color/primary" />
 
             <com.google.android.material.button.MaterialButton
@@ -142,6 +144,8 @@
                 android:layout_height="56dp"
                 android:layout_marginTop="12dp"
                 android:text="VIRTUAL MIRROR"
+                android:gravity="center"
+                android:maxLines="2"
                 android:textColor="@color/primary"
                 app:backgroundTint="@color/primary_light"
                 app:cornerRadius="16dp" />
@@ -154,6 +158,8 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="36dp"
                 android:text="MATCH ACCESSORIES"
+                android:gravity="center"
+                android:maxLines="2"
                 android:textColor="@color/primary"
                 app:strokeColor="@color/primary"
                 app:cornerRadius="16dp" />

@@ -34,6 +34,7 @@ The project is structured as a production-style Android app with Firebase Authen
 ## Product Screens
 
 <p align="center">
+  <img src="docs/screenshots/00_starting_screen.jpeg" alt="Fashnix starting screen" width="220" />
   <img src="docs/screenshots/13_login_screen.png" alt="Login screen" width="220" />
   <img src="docs/screenshots/14_create_account_screen.png" alt="Create account screen" width="220" />
 </p>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Fashnix" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Brand Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimaryContainer">@color/primary_light</item>
+        <item name="colorOnPrimaryContainer">@color/brand_ink</item>
+
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/primary_light</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+
+        <item name="android:windowBackground">@drawable/bg_couture_canvas</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:forceDarkAllowed">false</item>
+
+        <!-- Premium Component Style Overrides -->
+        <item name="materialCardViewStyle">@style/LuxuryCardStyle</item>
+        <item name="materialButtonStyle">@style/LuxuryButtonStyle</item>
+        <item name="textInputStyle">@style/LuxuryInputStyle</item>
+        <item name="materialAlertDialogTheme">@style/Theme_Fashnix_Dialog</item>
+
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Fashnix.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Fashnix.Large</item>
+
+        <!-- Typography -->
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Fashnix.TitleLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Fashnix.BodyMedium</item>
+    </style>
+
+    <style name="ShapeAppearance.Fashnix.Medium" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Fashnix.Large" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <!-- Luxury Typography -->
+    <style name="TextAppearance.Fashnix.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.Fashnix.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <!-- Splash Screen -->
+    <style name="Theme.Fashnix.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#050505</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/applogo_splash</item>
+        <item name="postSplashScreenTheme">@style/Theme.Fashnix</item>
+    </style>
+
+    <style name="Theme.Fashnix.BlackSplash" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash_black</item>
+        <item name="android:colorBackground">#050505</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">#050505</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

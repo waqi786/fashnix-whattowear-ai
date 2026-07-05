@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/surface"
+    app:cardCornerRadius="22dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/border_standard"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <View
+            android:id="@+id/accentLine"
+            android:layout_width="34dp"
+            android:layout_height="4dp"
+            android:background="@color/primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/moduleAnim"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/accentLine"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/fashion_loading" />
+
+        <ImageView
+            android:id="@+id/moduleIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_couture_chip"
+            android:padding="12dp"
+            android:src="@drawable/ic_sparkle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/accentLine"
+            app:tint="@color/primary" />
+
+        <TextView
+            android:id="@+id/moduleTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/moduleIcon"
+            tools:text="Style Remix" />
+
+        <TextView
+            android:id="@+id/moduleSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/moduleTitle"
+            tools:text="AI generative looks" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

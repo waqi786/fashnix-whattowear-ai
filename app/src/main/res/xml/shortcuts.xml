@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- App Actions capability -->
+    <capability android:name="actions.intent.GET_THING">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.fashnix.app"
+            android:targetClass="com.fashnix.app.ui.main.MainActivity">
+            <parameter
+                android:name="thing.name"
+                android:key="query" />
+            <data android:scheme="fashnix"
+                  android:host="chat"
+                  android:pathPrefix="/ask" />
+        </intent>
+        <fulfillment urlTemplate="fashnix://chat/ask?query={query}" />
+    </capability>
+
+    <!-- Shortcut: Ask Fashnix what to wear -->
+    <shortcut
+        android:shortcutId="ask_fashnix_outfit"
+        android:enabled="true"
+        android:shortcutShortLabel="@string/shortcut_outfit_label"
+        android:shortcutLongLabel="@string/shortcut_outfit_long_label">
+        <capability-binding android:key="actions.intent.GET_THING">
+            <parameter-binding
+                android:key="thing.name"
+                android:value="@string/shortcut_outfit_query" />
+        </capability-binding>
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="fashnix://chat/ask?query=What+should+I+wear+today" />
+    </shortcut>
+</shortcuts>

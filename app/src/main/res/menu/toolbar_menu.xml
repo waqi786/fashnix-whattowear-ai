@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile_title"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_family_closet"
+        android:icon="@drawable/ic_wardrobe_placeholder"
+        android:title="@string/family_closet"
+        app:showAsAction="never" />
+    
+    <item
+        android:id="@+id/action_intelligence_hub"
+        android:icon="@drawable/ic_sparkle"
+        android:title="@string/hub_title"
+        app:showAsAction="never" />
+    
+    <item
+        android:id="@+id/action_laundry"
+        android:icon="@drawable/ic_laundry_basket"
+        android:title="@string/laundry_title"
+        app:showAsAction="never" />
+    
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_menu"
+        android:title="Settings"
+        app:showAsAction="never" />
+</menu>

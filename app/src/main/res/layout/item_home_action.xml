@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/surface_glassmorphism"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:rippleColor="@color/nav_item_active_bg"
+    app:strokeColor="@color/border_glass"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="12dp">
+
+        <View
+            android:id="@+id/iconBg"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_action_orb"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/actionIcon"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:src="@drawable/ic_camera"
+            app:layout_constraintBottom_toBottomOf="@id/iconBg"
+            app:layout_constraintEnd_toEndOf="@id/iconBg"
+            app:layout_constraintStart_toStartOf="@id/iconBg"
+            app:layout_constraintTop_toTopOf="@id/iconBg"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/actionTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-black"
+            android:maxLines="1"
+            android:textColor="@color/text_primary"
+            android:textSize="12.5sp"
+            app:layout_constraintBottom_toTopOf="@id/actionSubtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iconBg"
+            app:layout_constraintTop_toTopOf="@id/iconBg"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Smart Scan" />
+
+        <TextView
+            android:id="@+id/actionSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.04"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textColor="@color/primary"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@id/iconBg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iconBg"
+            app:layout_constraintTop_toBottomOf="@id/actionTitle"
+            tools:text="AI CAMERA" />
+
+        <TextView
+            android:id="@+id/actionDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iconBg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

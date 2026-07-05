@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Premium light-orange fashion brand palette -->
+    <color name="primary">#FF5A00</color>
+    <color name="primary_dark">#C23A00</color>
+    <color name="primary_light">#FFB36B</color>
+    <color name="secondary">#E84A00</color>
+    <color name="accent_gold">#FF7A1A</color>
+    <color name="accent_cyan">#FF6A00</color>
+    <color name="accent_hot_pink">#FF7A1A</color>
+    <color name="surface_alt">#FFF3EA</color>
+    <color name="surface_dark">#FFE8D8</color>
+    <color name="text_on_dark">#17110D</color>
+    <color name="brand_ink">#17110D</color>
+
+    <!-- Interaction -->
+    <color name="parrot_green">#FF8A1F</color>
+    <color name="accent_neon">#FFD2A3</color>
+    <color name="hover_color">#F04D00</color>
+    <color name="success">#FF7A1A</color>
+    <color name="warning">#FF9A3D</color>
+    <color name="info">#FF6A00</color>
+
+    <!-- Error/Warning -->
+    <color name="error">#FF6E6E</color>
+
+    <!-- Professional Light Base -->
+    <color name="background">#FFF7EF</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="surface_variant">#FFFFEFE1</color>
+    <color name="surface_elevated">#FFFFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Glassmorphism Effects -->
+    <color name="surface_glass">#EFFFFFFF</color>
+    <color name="surface_glassmorphism">#F7FFFFFF</color>
+    <color name="border_glassmorphism">#33FF5A00</color>
+    <color name="border_glass">#26FF5A00</color>
+
+    <!-- Navigation -->
+    <color name="nav_background">#FFFDF7F0</color>
+    <color name="nav_item_unselected">#7B6B61</color>
+    <color name="nav_item_active_bg">#24FF5A00</color>
+    <color name="border_color">#33FF5A00</color>
+    <color name="border_standard">#29FF5A00</color>
+
+    <!-- Text -->
+    <color name="text_primary">#17110D</color>
+    <color name="text_secondary">#725E50</color>
+    <color name="text_muted">#988578</color>
+    <color name="text_grey">#988578</color>
+
+    <!-- Light auth screens inspired by the reference, using Fashnix brand orange -->
+    <color name="auth_canvas">#FFFDF9</color>
+    <color name="auth_text">#18222B</color>
+    <color name="auth_text_secondary">#5E6872</color>
+    <color name="auth_field_stroke">#263849</color>
+    <color name="auth_pattern">#1AFF5A00</color>
+    <color name="auth_button_shadow">#33263849</color>
+</resources>

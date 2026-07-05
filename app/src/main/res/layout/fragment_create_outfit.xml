@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Luxury Immersive Glow -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/fashion_loading"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        android:alpha="0.03"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/createToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationIconTint="@color/text_primary"
+            app:title="OUTFIT BUILDER"
+            app:titleCentered="true"
+            app:titleTextColor="@color/text_primary"
+            app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- Sidebar Tools (Like the Pic) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/toolsSidebar"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:cardBackgroundColor="@color/surface_glass"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/border_glass"
+            app:layout_constraintTop_toTopOf="@id/canvasCard"
+            app:layout_constraintBottom_toBottomOf="@id/canvasCard"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="16dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_send"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:tint="@color/white" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_heart"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:tint="@color/primary" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_refresh"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:tint="@color/white" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_close"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:tint="@color/error" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- The Main Canvas -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/canvasCard"
+            android:layout_width="0dp"
+            android:layout_height="320dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/surface_glass"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1.5dp"
+            app:strokeColor="@color/primary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/toolsSidebar"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_hanger"
+                    android:alpha="0.05"
+                    android:padding="80dp" />
+
+                <LinearLayout
+                    android:id="@+id/outfitPreviewContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STYLE CANVAS"
+                    android:textColor="@color/primary"
+                    android:textSize="10sp"
+                    android:letterSpacing="0.3"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Item Selection Area -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itemGrid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:clipToPadding="false"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="260dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3"
+            app:layout_constraintTop_toBottomOf="@id/canvasCard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:listitem="@layout/item_clothing_card" />
+
+        <!-- Floating Finish Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveOutfitButton"
+            style="@style/LuxuryButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginBottom="180dp"
+            android:paddingHorizontal="40dp"
+            android:text="FINALIZE LOOK"
+            android:backgroundTint="@color/primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

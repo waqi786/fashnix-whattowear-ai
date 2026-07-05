@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="10dp"
+    app:cardBackgroundColor="@color/surface_glass"
+    app:cardCornerRadius="32dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/border_glass"
+    app:strokeWidth="1.5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/plannedPreview"
+            android:layout_width="88dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_wardrobe_placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedImageView"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="1.5dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/btnOptions"
+            app:layout_constraintStart_toEndOf="@id/plannedPreview"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/outfitName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charity Dinner Look"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-black" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/moodChip"
+                style="@style/Widget.Material3.Chip.Assist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="10sp"
+                app:chipBackgroundColor="@color/surface_variant"
+                tools:text="CONFIDENT" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/itemChips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:chipSpacingVertical="2dp"
+                app:chipSpacingHorizontal="4dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/markWornButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MARK AS WORN"
+                android:textSize="11sp"
+                android:textColor="@color/primary"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnOptions"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_circle_glass"
+            android:src="@drawable/ic_menu"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

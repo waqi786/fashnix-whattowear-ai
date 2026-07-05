@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LuxuryCardStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="12dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="28dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#12FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Post Image with subtle overlay -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/postImage"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_wardrobe_placeholder"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedTopCornersLarge" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/gradient_bottom_overlay"
+            app:layout_constraintBottom_toBottomOf="@id/postImage" />
+
+        <!-- Floating Action: Like -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/favoriteBtnWrapper"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            app:cardBackgroundColor="#40000000"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#33FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/favoriteBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_heart"
+                android:padding="12dp"
+                app:tint="@color/white" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Post Details -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/surface"
+            app:layout_constraintTop_toBottomOf="@id/postImage">
+
+            <TextView
+                android:id="@+id/postTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:letterSpacing="-0.02"
+                tools:text="Urban Minimalism"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/postAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-bold"
+                android:textColor="@color/primary_light"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:letterSpacing="0.1"
+                tools:text="BY ELENA STEVENS"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/postTitle" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/postAuthor">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_star"
+                    app:tint="@color/accent_gold" />
+
+                <TextView
+                    android:id="@+id/likeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    tools:text="1.2k STYLE CREDITS" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@drawable/bg_couture_canvas">
+
+    <!-- Premium Animated Backdrop -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/fashion_loading"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        android:alpha="0"
+        android:visibility="gone"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_couture_canvas"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/wardrobeToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:paddingTop="12dp"
+            app:title="Wardrobe"
+            app:titleCentered="true"
+            app:titleTextColor="@color/text_primary"
+            app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <!-- High-End Stats Card: Fully Functional -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/vaultStatsCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/surface"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="2dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/border_glass">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/totalPiecesText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/primary"
+                            android:textSize="20sp"
+                            android:fontFamily="sans-serif-black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PIECES"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="9sp"
+                            android:letterSpacing="0.1"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="1dp" android:layout_height="30dp" android:background="@color/border_glass"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/vaultValuationText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/text_primary"
+                            android:textSize="20sp"
+                            android:fontFamily="sans-serif-black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="READY"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="9sp"
+                            android:letterSpacing="0.1"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="1dp" android:layout_height="30dp" android:background="@color/border_glass"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/styleScoreText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:textColor="@color/success"
+                            android:textSize="20sp"
+                            android:fontFamily="sans-serif-black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SCORE"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="9sp"
+                            android:letterSpacing="0.1"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Search Bar -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/surface"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="2dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/border_glass">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_search"
+                        app:tint="@color/text_secondary" />
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/searchEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:hint="Search your collection..."
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_grey"
+                        android:textSize="14sp"
+                        android:paddingHorizontal="12dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginBottom="12dp">
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/categoryChips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:singleSelection="true"
+                    app:selectionRequired="true"
+                    app:chipSpacingHorizontal="10dp" />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wardrobeRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:padding="8dp"
+        android:paddingBottom="360dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/item_clothing_grid" />
+
+    <LinearLayout
+        android:id="@+id/emptyState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="40dp"
+        android:visibility="gone">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            app:lottie_rawRes="@raw/fashion_loading"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false"
+            android:alpha="0.4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wardrobe is empty"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/scanFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="240dp"
+        android:src="@drawable/ic_camera"
+        app:tint="@color/white"
+        app:backgroundTint="@color/primary"
+        app:elevation="8dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

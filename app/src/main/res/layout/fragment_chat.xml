@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Immersive AI Backdrop -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/fashion_loading"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        android:alpha="0"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/chatToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationIconTint="@color/text_primary"
+            app:title="AI Stylist"
+            app:titleCentered="true"
+            app:titleTextColor="@color/text_primary"
+            app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:padding="@dimen/spacing_m"
+            android:paddingBottom="100dp"
+            app:layout_constraintBottom_toTopOf="@id/inputCard"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/item_chat_message_ai" />
+
+        <!-- Selected Asset Preview -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/selectedImageContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"
+            app:cardCornerRadius="16dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/primary"
+            app:layout_constraintBottom_toTopOf="@id/inputCard"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/selectedImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop" />
+                <ImageButton
+                    android:id="@+id/removeImageButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="top|end"
+                    android:background="@drawable/bg_circle_glass"
+                    android:src="@drawable/ic_close"
+                    app:tint="@color/white" />
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Input Interface: Professional & Symmetrical -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/inputCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_m"
+            app:cardBackgroundColor="@color/surface_elevated"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/border_standard"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <ImageButton
+                    android:id="@+id/attachButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_add_photo"
+                    app:tint="@color/primary" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/messageInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Ask your fashion copilot..."
+                    android:maxLines="4"
+                    android:paddingHorizontal="12dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_grey"
+                    android:textSize="15sp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/sendButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="@color/primary"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/ic_send"
+                    app:tint="@color/white"
+                    app:elevation="0dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

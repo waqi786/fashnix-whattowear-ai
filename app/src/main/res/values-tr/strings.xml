@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Fashnix</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Gardırobunu Tara</string>
+    <string name="onboarding_subtitle_1">Yapay zekânın kıyafetlerini, renklerini ve durumları anında tanımasına izin ver.</string>
+    <string name="onboarding_title_2">Yapay Zekâdan Stil Tavsiyesi Al</string>
+    <string name="onboarding_subtitle_2">Kişisel stilistin gardırobunu bilir ve akıllı öneriler sunar.</string>
+    <string name="onboarding_title_3">Kombinlerini Planla</string>
+    <string name="onboarding_subtitle_3">Hafta, seyahat, etkinlikler için kombini düzenle — hatırlatıcılarla.</string>
+    <string name="skip">ATLA</string>
+    <string name="next">İLERİ</string>
+    <string name="join_the_elite">SEÇKİNLERE KATIL</string>
+
+    <!-- Auth -->
+    <string name="email">E-posta</string>
+    <string name="password">Şifre</string>
+    <string name="confirm_password">Şifreyi Onayla</string>
+    <string name="full_name">Tam Ad</string>
+    <string name="gender">Cinsiyet</string>
+    <string name="body_type">Vücut Tipi</string>
+    <string name="men">Erkek</string>
+    <string name="women">Kadın</string>
+    <string name="unisex">Uniseks</string>
+    <string name="slim">İnce</string>
+    <string name="athletic">Atletik</string>
+    <string name="plus_size">Büyük Beden</string>
+    <string name="initialize_session">OTURUMU BAŞLAT</string>
+    <string name="create_account">HESAP OLUŞTUR</string>
+    <string name="forgot_password">Şifreni mi unuttun?</string>
+    <string name="dont_have_account">Hesabın yok mu? Kaydol</string>
+    <string name="already_have_account">Zaten hesabın var mı? Giriş yap</string>
+    <string name="send_reset_email">Sıfırlama E-postası Gönder</string>
+    <string name="reset_email_sent">Şifre sıfırlama e-postası gönderildi.</string>
+    <string name="field_required">Bu alan zorunludur</string>
+    <string name="passwords_do_not_match">Şifreler eşleşmiyor</string>
+    <string name="invalid_email">Geçersiz e-posta formatı</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Ana Sayfa</string>
+    <string name="nav_wardrobe">Gardırop</string>
+    <string name="nav_scan">Tara</string>
+    <string name="nav_chat">Yapay Zekâ Sohbet</string>
+    <string name="nav_planner">Planlayıcı</string>
+
+    <!-- Home Screen -->
+    <string name="weather_unavailable">Hava durumu kullanılamıyor</string>
+    <string name="retry">Tekrar Dene</string>
+    <string name="today_pick">Günün Seçimi</string>
+    <string name="wear_this">BUNU GİY</string>
+    <string name="surprise_me">BENİ ŞAŞIRT</string>
+    <string name="try_on">DENE</string>
+    <string name="smart_scan">AKILLI TARA</string>
+    <string name="import_item">İÇE AKTAR</string>
+    <string name="laundry_check">🧺 YIKAMA KONTROL</string>
+    <string name="recent_scans">Son Taramalar</string>
+    <string name="remix_wardrobe">Gardırobumu Yeniden Karıştır</string>
+    <string name="ask_ai_stylist">Kombin tavsiyesine mi ihtiyacın var? Kişisel yapay zekâ stilistin hazır.</string>
+    <string name="chat_now">HEMEN SOHBET ET</string>
+    <string name="streak_format">🔥 %d günlük seri!</string>
+    <string name="event_advisor">Bir etkinlik için mi giyiniyorsun?</string>
+    <string name="get_advice">TAVSİYE AL</string>
+    <string name="high_uv_warning">Bugün UV indeksi %.0f – uzun kollu giy ve güneş gözlüğü tak</string>
+
+    <!-- Weather -->
+    <string name="rainy_tip">Yağmurlu gün – su geçirmez botlar ve trençkot mükemmel olur!</string>
+    <string name="sunny_tip">Parlak güneş – açık renkler ve bir şapka harikalar yaratır.</string>
+    <string name="cold_tip">Soğuk gün – şık bir ceketle kat kat giyin.</string>
+    <string name="hot_tip">Kavurucu – nefes alan kumaşlar en iyi arkadaşındır.</string>
+    <string name="cloudy_tip">Bulutlu – canlı bir renk havanı yükseltebilir.</string>
+
+    <!-- Wardrobe Screen -->
+    <string name="wardrobe_title">Gardırop</string>
+    <string name="search_hint">Gardırobunda ara…</string>
+    <string name="filter_category">Kategori</string>
+    <string name="filter_colour">Renk</string>
+    <string name="filter_occasion">Durum</string>
+    <string name="all">Tümü</string>
+    <string name="accessories_result">AKSESUARLAR</string>
+    <string name="apparel">Giyim</string>
+    <string name="footwear">Ayakkabı</string>
+    <string name="personal_care">Kişisel Bakım</string>
+    <string name="show_family_items">Aile Eşyalarını Göster</string>
+    <string name="scan_item">EŞYAYI TARA</string>
+    <string name="worn_format">Giyildi: %d</string>
+    <string name="colour_selector">Renk Seç</string>
+    <string name="edit">Düzenle</string>
+    <string name="delete">Sil</string>
+    <string name="mark_as_worn">Giyildi Olarak İşaretle</string>
+    <string name="match_accessories">Aksesuarları Eşleştir</string>
+
+    <!-- Clothing Detail Screen -->
+    <string name="details">Detaylar</string>
+    <string name="metrics">Metrikler</string>
+    <string name="laundry">Yıkama</string>
+    <string name="cost_per_wear">Giyim Başına Maliyet</string>
+    <string name="sustainability_score">Sürdürülebilirlik Skoru</string>
+    <string name="last_worn">Son Giyilme</string>
+    <string name="never">Hiç</string>
+    <string name="remind_me_to_wash">Yıkamayı hatırlat</string>
+    <string name="wash_interval">Her X giyimde yıka</string>
+    <string name="delete_confirmation">\'%s\' gardırobundan kaldırılsın mı? Bu geri alınamaz.</string>
+    <string name="cancel">İptal</string>
+    <string name="save">Kaydet</string>
+    <string name="saving">Kaydediliyor…</string>
+    <string name="item_marked_worn">%s giyildi olarak işaretlendi!</string>
+    <string name="edit_item">Eşyayı Düzenle</string>
+
+    <!-- Camera Screen -->
+    <string name="grant_permission">İzin Ver</string>
+    <string name="camera_permission_rationale">Kıyafetlerini taramak için kamera erişimi gereklidir.</string>
+    <string name="retry_shot">TEKRAR ÇEK</string>
+    <string name="use_photo">KULLAN</string>
+
+    <!-- Scan Result Screen -->
+    <string name="ai_analysis">Yapay Zekâ Analiz Sonuçları</string>
+    <string name="category_label">Kategori</string>
+    <string name="colour_label">Renk</string>
+    <string name="occasion_label">Durum</string>
+    <string name="gender_label">Cinsiyet</string>
+    <string name="tap_to_choose_colour">Renginden emin değiliz — seçmek için dokunun</string>
+    <string name="add_to_wardrobe">GARDİROBA EKLE</string>
+    <string name="styling_tips">STİL İPUÇLARI</string>
+    <string name="accessories">AKSESUARLAR</string>
+    <string name="added_to_wardrobe">Gardıroba eklendi!</string>
+    <string name="uploading">Yükleniyor…</string>
+    <string name="change_occasion">Durumu Değiştir</string>
+    <string name="change_colour">Rengi Değiştir</string>
+
+    <!-- Chat Screen -->
+    <string name="style_assistant">Stil Asistanı</string>
+    <string name="clear_chat">Sohbeti Temizle</string>
+    <string name="welcome_chat">👗 Merhaba, ben senin yapay zekâ stilistinim! Gardırobunu biliyorum ve kombin fikirleri, etkinlik giyimi, valiz listeleri ve daha fazlasında yardımcı olabilirim. İstediğini sor!</string>
+    <string name="quick_wear_today">Bugün ne giyeyim?</string>
+    <string name="quick_style_suit">Lacivert takımımı nasıl kombinlerim?</string>
+    <string name="quick_packing">Hafta sonu kaçamağı için valiz listesi?</string>
+    <string name="quick_event">Etkinlik Kıyafet Kodu</string>
+    <string name="quick_match_blue">Mavi gömleğime ne uyar?</string>
+    <string name="message_hint">Fashnix\'e sor…</string>
+    <string name="voice_input_unavailable">Ses girişi kullanılamıyor</string>
+    <string name="error_chat_fallback">Bağlanamadım. Lütfen tekrar dene.</string>
+    <string name="retry_chat">TEKRAR DENE</string>
+
+    <!-- Planner Screen -->
+    <string name="planner_title">Kombin Planlayıcı</string>
+    <string name="add_outfit">KOMBİN EKLE</string>
+    <string name="outfit_name">Kombin Adı</string>
+    <string name="select_items">Eşyaları Seç</string>
+    <string name="set_reminder">Hatırlatıcı Kur</string>
+    <string name="mood">Ruh Hali</string>
+    <string name="notes">Notlar</string>
+    <string name="confident">Özgüvenli</string>
+    <string name="comfortable">Rahat</string>
+    <string name="bold">Cesur</string>
+    <string name="professional">Profesyonel</string>
+    <string name="casual">Gündelik</string>
+    <string name="festive">Festival</string>
+    <string name="mark_as_worn_outfit">GİYİLDİ OLARAK İŞARETLE</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">Profil</string>
+    <string name="style_dna">Stil DNA</string>
+    <string name="discover_style">STİLİNİ KEŞFET</string>
+    <string name="preferences">Tercihler</string>
+    <string name="favourite_occasions">Favori Durumlar</string>
+    <string name="favourite_colours">Favori Renkler</string>
+    <string name="skin_tone">Cilt Tonu</string>
+    <string name="streak_badges">Seri ve Rozetler</string>
+    <string name="view_all_badges">TÜM ROZETLERİ GÖR</string>
+    <string name="language">Dil</string>
+    <string name="family_closet">Aile Dolabı</string>
+    <string name="create_new_group">Yeni Grup Oluştur</string>
+    <string name="join_with_code">Kod ile Katıl</string>
+    <string name="invite_code">Davet Kodu</string>
+    <string name="copy_code">KODU KOPYALA</string>
+    <string name="share_code">PAYLAŞ</string>
+    <string name="leave_group">Gruptan Ayrıl</string>
+    <string name="wardrobe_insights">Gardırop İçgörüleri</string>
+    <string name="logout">ÇIKIŞ YAP</string>
+    <string name="logout_confirmation">Çıkış yapmak istediğine emin misin?</string>
+    <string name="choose_language">Dil Seç</string>
+
+    <!-- Languages -->
+    <string name="lang_english">English</string>
+    <string name="lang_urdu">اردو</string>
+    <string name="lang_hindi">हिंदी</string>
+    <string name="lang_arabic">العربية</string>
+    <string name="lang_french">Français</string>
+    <string name="lang_spanish">Español</string>
+    <string name="lang_turkish">Türkçe</string>
+
+    <!-- Laundry Dashboard -->
+    <string name="laundry_title">Yıkama Kontrol</string>
+    <string name="mark_as_clean">TEMİZ OLARAK İŞARETLE</string>
+    <string name="worn_times_format">Son yıkamadan beri %d kez giyildi</string>
+    <string name="all_clean">Tüm kıyafetlerin temiz ve taze! 🌟</string>
+    <string name="laundry_marked_clean">%s temiz olarak işaretlendi! 🧺</string>
+
+    <!-- Virtual Try-On -->
+    <string name="try_on_title">Sanal Deneme</string>
+    <string name="stand_back">Gövdenin tamamen görünmesi için geri çekil</string>
+    <string name="move_back">📷 Geri çekil – vücudun algılanamıyor</string>
+    <string name="capture">YAKALA</string>
+    <string name="look_saved">Görünüm kaydedildi! ✨ Galerini kontrol et.</string>
+
+    <!-- Event Dress Code Advisor -->
+    <string name="advisor_title">Etkinlik Kıyafet Kodu Danışmanı</string>
+    <string name="select_event">Etkinlik Seç</string>
+    <string name="dress_code_guide">Kıyafet Kodu Rehberi</string>
+    <string name="from_wardrobe">Gardırobundan</string>
+    <string name="plan_this_outfit">BU KOMBİNİ PLANLA</string>
+    <string name="job_interview">İş Görüşmesi</string>
+    <string name="cocktail_party">Kokteyl Partisi</string>
+    <string name="beach_wedding">Plaj Düğünü</string>
+    <string name="festive_ethnic">Festival Etnik (Bayram/Diwali)</string>
+    <string name="funeral_memorial">Cenaze / Anma</string>
+    <string name="black_tie_gala">Smokin Galası</string>
+    <string name="first_date">İlk Buluşma</string>
+    <string name="casual_friday">Gündelik Cuma</string>
+    <string name="sports_event">Spor Etkinliği</string>
+    <string name="destination_wedding">Hedef Düğünü</string>
+    <string name="birthday_party">Doğum Günü Partisi</string>
+    <string name="business_casual">İş Gündeliği</string>
+
+    <!-- Family Closet -->
+    <string name="family_closet_title">Aile Dolabı</string>
+    <string name="borrow">ÖDÜNÇ AL</string>
+    <string name="return_item">İADE ET</string>
+    <string name="family_outfit">AİLE KOMBİNİ</string>
+    <string name="borrow_success">Ödünç alındı! 7 gün içinde iade et.</string>
+    <string name="invalid_code">Geçersiz kod — kontrol edip tekrar deneyin.</string>
+    <string name="left_group">Gruptan ayrıldın.</string>
+    <string name="group_created">Grup oluşturuldu! Davet kodunu paylaş.</string>
+    <string name="share_message">Fashnix\'teki aile dolabıma katıl! Kod: %s</string>
+
+    <!-- Intelligence Hub -->
+    <string name="hub_title">Zekâ Merkezi</string>
+    <string name="remix_wardrobe_short">Gardırobumu Yeniden Karıştır</string>
+    <string name="save_look">GÖRÜNÜMÜ KAYDET</string>
+    <string name="gap_analyzer">Eksik Analizörü</string>
+    <string name="missing_casual_footwear">Gündelik ayakkabın eksik.</string>
+    <string name="missing_formal">Gardırobuna daha fazla resmi kıyafet ekle.</string>
+    <string name="missing_accessories">Gardırobunda aksesuar eksiği var – bir saat veya kemer çok fark yaratır.</string>
+    <string name="suggested_item">Önerilen Eşya</string>
+    <string name="capsule_wardrobe">Kapsül Gardırop Oluşturucu</string>
+    <string name="destination">Hedef</string>
+    <string name="days">Gün</string>
+    <string name="trip_type">Seyahat Türü</string>
+    <string name="generate_list">LİSTE OLUŞTUR</string>
+    <string name="business_trip">İş</string>
+    <string name="beach_trip">Plaj</string>
+    <string name="adventure_trip">Macera</string>
+    <string name="city_break_trip">Şehir Gezisi</string>
+    <string name="mountain_trip">Dağ</string>
+    <string name="copy_list">LİSTEYİ KOPYALA</string>
+    <string name="list_copied">Valiz listesi kopyalandı!</string>
+    <string name="cost_per_wear_dashboard">Giyim Başına Maliyet Panosu</string>
+    <string name="best_value">En İyi Değer 🏆</string>
+    <string name="never_worn_warning">Hiç giyilmedi – bağışlamayı düşün</string>
+    <string name="style_challenges">Stil Mücadeleleri</string>
+    <string name="monochrome_week">Tek Renk Haftası</string>
+    <string name="monochrome_desc">7 gün boyunca tek bir renk ailesinden kombinler giy.</string>
+    <string name="accessory_week">Aksesuar Haftası</string>
+    <string name="accessory_desc">7 gün boyunca her kombine en az bir aksesuar ekle.</string>
+    <string name="formal_week">Resmi Hafta</string>
+    <string name="formal_desc">5 gün üst üste resmi kıyafet giy.</string>
+
+    <!-- Style Quiz -->
+    <string name="quiz_colour_palette">Tercih edilen renk paleti?</string>
+    <string name="neutrals">Nötr</string>
+    <string name="bold_bright">Cesur ve Parlak</string>
+    <string name="pastels">Pastel</string>
+    <string name="monochrome">Monokrom</string>
+    <string name="quiz_occasion">Genel durum?</string>
+    <string name="work">İş</string>
+    <string name="formal_events">Resmi Etkinlikler</string>
+    <string name="mixed">Karma</string>
+    <string name="quiz_inspiration">Stil ilhamı?</string>
+    <string name="classic">Klasik</string>
+    <string name="streetwear">Sokak Stili</string>
+    <string name="bohemian">Bohem</string>
+    <string name="minimalist">Minimalist</string>
+    <string name="quiz_silhouette">Tercih edilen silüet?</string>
+    <string name="fitted">Oturan</string>
+    <string name="relaxed">Rahat</string>
+    <string name="structured">Yapılı</string>
+    <string name="flowy">Dökümlü</string>
+    <string name="quiz_priority">Ana moda önceliği?</string>
+    <string name="comfort">Konfor</string>
+    <string name="statement">İfade</string>
+    <string name="versatility">Çok Yönlülük</string>
+    <string name="elegance">Zarafet</string>
+
+    <!-- Style DNA Labels -->
+    <string name="dna_classic_minimalist">Klasik Minimalist</string>
+    <string name="dna_bold_trendsetter">Cesur Trend Belirleyici</string>
+    <string name="dna_casual_comfort">Gündelik Konfor</string>
+    <string name="dna_elegant_professional">Zarif Profesyonel</string>
+    <string name="dna_bohemian_spirit">Bohem Ruh</string>
+
+    <!-- Badges -->
+    <string name="badge_7_day_streaker">7 Günlük Seri</string>
+    <string name="badge_14_day_streaker">İki Hafta Harikası</string>
+    <string name="badge_fashion_adventurer">Moda Maceracısı</string>
+    <string name="badge_mix_match_master">Kombinleme Ustası</string>
+    <string name="badge_family_stylist">Aile Stilisti</string>
+    <string name="badge_laundry_hero">Çamaşır Kahramanı</string>
+    <string name="badge_unlocked_title">🏆 Rozet Açıldı!</string>
+    <string name="locked">Kilitli</string>
+    <string name="earned_on">%s tarihinde kazanıldı</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_daily_outfit">Günlük Kombin</string>
+    <string name="notification_channel_laundry">Yıkama Hatırlatıcıları</string>
+    <string name="notification_channel_family">Aile Dolabı</string>
+    <string name="notification_channel_badges">Rozetler ve Ödüller</string>
+    <string name="notification_time_to_wash_title">Yıkama zamanı! 🧺</string>
+    <string name="notification_time_to_wash_body">%s yıkanmaya ihtiyacı var.</string>
+    <string name="notification_borrow_title">Eşya Ödünç Alındı</string>
+    <string name="notification_borrow_body">%1$s senin %2$s ödünç aldı.</string>
+    <string name="notification_return_title">Eşya İade Edildi</string>
+    <string name="notification_return_body">%1$s senin %2$s iade etti.</string>
+    <string name="notification_reminder_return_title">İade Hatırlatıcısı</string>
+    <string name="notification_reminder_return_body">%1$s\'i %2$s\'e iade etmeyi unutma!</string>
+
+    <!-- App Actions -->
+    <string name="shortcut_outfit_label">Fashnix\'e ne giyeceğini sor</string>
+    <string name="shortcut_outfit_long_label">Gardırobundan günlük bir kombin önerisi al</string>
+    <string name="shortcut_outfit_query">Bugün ne giymeliyim?</string>
+
+    <!-- General -->
+    <string name="ok">Tamam</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="loading">Yükleniyor…</string>
+    <string name="error_generic">Bir şeyler yanlış gitti. Lütfen tekrar dene.</string>
+    <string name="mic_description">Mikrofon</string>
+    <string name="send_description">Gönder</string>
+    <!-- Turkish -->
+    <string name="date">Tarih</string>
+    <string name="time">Zaman</string>
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/fashion_loading"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:alpha="0.05"
+        android:scaleType="centerCrop" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/quizProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:indicatorColor="@color/primary"
+                app:trackColor="@color/border_glass"
+                app:trackThickness="8dp"
+                app:trackCornerRadius="4dp"
+                android:progress="20" />
+
+            <TextView
+                android:id="@+id/stepIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="STEP 1 OF 5"
+                android:textColor="@color/primary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.2" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp">
+
+                <LinearLayout
+                    android:id="@+id/quizContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/questionTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="WHAT IS YOUR PRIMARY COLOR PALETTE?"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:fontFamily="sans-serif-black"
+                        android:lineSpacingExtra="4dp" />
+
+                    <RadioGroup
+                        android:id="@+id/optionsGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp">
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/option1"
+                            style="@style/LuxuryCardStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:padding="20dp"
+                            android:text="Monochromatic"
+                            android:textColor="@color/white"
+                            android:button="@null"
+                            android:background="@drawable/bg_selector_glass_card" />
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/option2"
+                            style="@style/LuxuryCardStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:padding="20dp"
+                            android:text="Earth Tones"
+                            android:textColor="@color/white"
+                            android:button="@null"
+                            android:background="@drawable/bg_selector_glass_card" />
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/option3"
+                            style="@style/LuxuryCardStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:padding="20dp"
+                            android:text="Vibrant &amp; Bold"
+                            android:textColor="@color/white"
+                            android:button="@null"
+                            android:background="@drawable/bg_selector_glass_card" />
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/option4"
+                            style="@style/LuxuryCardStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:padding="20dp"
+                            android:text="Pastels"
+                            android:textColor="@color/white"
+                            android:button="@null"
+                            android:background="@drawable/bg_selector_glass_card" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/resultLoadingLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingTop="60dp">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:lottie_rawRes="@raw/fashion_loading"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="MAPPING YOUR NEURAL DNA..."
+                        android:textColor="@color/primary"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-black"
+                        android:letterSpacing="0.2" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/backButton"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="64dp"
+                    android:text="BACK"
+                    android:textColor="@color/text_secondary" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/nextButton"
+                    style="@style/LuxuryButtonStyle"
+                    android:layout_width="160dp"
+                    android:layout_height="64dp"
+                    android:text="NEXT"
+                    android:backgroundTint="@color/primary"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

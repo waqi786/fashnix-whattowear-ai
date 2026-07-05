@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LuxuryCardStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/surface"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="4dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/border_standard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <!-- Sharp 1:1 Image -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/clothingImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_wardrobe_placeholder"
+            app:layout_constraintDimensionRatio="4:5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+        <View
+            android:id="@+id/imageStudioOverlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/gradient_image_studio_overlay"
+            app:layout_constraintBottom_toBottomOf="@id/clothingImage"
+            app:layout_constraintEnd_toEndOf="@id/clothingImage"
+            app:layout_constraintStart_toStartOf="@id/clothingImage"
+            app:layout_constraintTop_toTopOf="@id/clothingImage" />
+
+        <!-- Occasion Badge: Solid Orange -->
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_price_tag"
+            android:backgroundTint="@color/primary_dark"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="READY"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:fontFamily="sans-serif-black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:id="@+id/colorIndicator"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/circle_bg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Executive Blazer"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintTop_toBottomOf="@id/clothingImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/laundryStatusIcon" />
+
+        <ImageView
+            android:id="@+id/laundryStatusIcon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_sparkle"
+            app:layout_constraintTop_toTopOf="@id/itemName"
+            app:layout_constraintBottom_toBottomOf="@id/itemName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/primary" />
+
+        <TextView
+            android:id="@+id/detailBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="2dp"
+            tools:text="AI CLASSIFIED"
+            android:textColor="@color/text_secondary"
+            android:textSize="9sp"
+            android:fontFamily="sans-serif-bold"
+            android:textAllCaps="true"
+            android:letterSpacing="0.1"
+            app:layout_constraintTop_toBottomOf="@id/itemName"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

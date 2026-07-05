@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="event_types">
+        <item>@string/job_interview</item>
+        <item>@string/cocktail_party</item>
+        <item>@string/beach_wedding</item>
+        <item>@string/festive_ethnic</item>
+        <item>@string/funeral_memorial</item>
+        <item>@string/black_tie_gala</item>
+        <item>@string/first_date</item>
+        <item>@string/casual_friday</item>
+        <item>@string/sports_event</item>
+        <item>@string/destination_wedding</item>
+        <item>@string/birthday_party</item>
+        <item>@string/business_casual</item>
+    </string-array>
+</resources>

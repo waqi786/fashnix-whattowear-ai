@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Global Premium Transitions -->
+    <action android:id="@+id/action_global_to_profile"
+        app:destination="@id/profileFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <!-- Home: High-End Dashboard -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.fashnix.app.ui.home.HomeFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_scanResultFragment"
+            app:destination="@id/scanResultFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out_bottom" />
+        <action
+            android:id="@+id/action_homeFragment_to_chatFragment"
+            app:destination="@id/chatFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_morningSaviorFragment"
+            app:destination="@id/morningSaviorFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Morning Savior: Decision-Killer Wardrobe -->
+    <fragment
+        android:id="@+id/morningSaviorFragment"
+        android:name="com.fashnix.app.ui.home.MorningSaviorFragment"
+        android:label="@string/morning_savior_title"
+        tools:layout="@layout/fragment_morning_savior" />
+
+    <!-- Wardrobe: Digital Gallery -->
+    <fragment
+        android:id="@+id/wardrobeFragment"
+        android:name="com.fashnix.app.ui.wardrobe.WardrobeFragment"
+        android:label="@string/nav_wardrobe"
+        tools:layout="@layout/fragment_wardrobe">
+        <action
+            android:id="@+id/action_wardrobeFragment_to_clothingItemDetailFragment"
+            app:destination="@id/clothingItemDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_wardrobeFragment_to_familyClosetFragment"
+            app:destination="@id/familyClosetFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Detailed View -->
+    <fragment
+        android:id="@+id/clothingItemDetailFragment"
+        android:name="com.fashnix.app.ui.wardrobe.ClothingItemDetailFragment"
+        android:label="@string/details"
+        tools:layout="@layout/fragment_clothing_detail">
+        <argument
+            android:name="clothingItemId"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_clothingItemDetailFragment_to_editItemFragment"
+            app:destination="@id/editItemFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out_bottom" />
+    </fragment>
+
+    <!-- Edit Item Fragment -->
+    <fragment
+        android:id="@+id/editItemFragment"
+        android:name="com.fashnix.app.ui.wardrobe.EditItemFragment"
+        android:label="Edit Item"
+        tools:layout="@layout/fragment_edit_item">
+        <argument
+            android:name="clothingItemId"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Family Closet -->
+    <fragment
+        android:id="@+id/familyClosetFragment"
+        android:name="com.fashnix.app.ui.family.FamilyClosetFragment"
+        android:label="Family Closet"
+        tools:layout="@layout/fragment_family_closet" />
+
+    <!-- AI Scan Result -->
+    <fragment
+        android:id="@+id/scanResultFragment"
+        android:name="com.fashnix.app.ui.scan.ScanResultFragment"
+        android:label="@string/ai_analysis"
+        tools:layout="@layout/fragment_scan_result">
+        <argument
+            android:name="capturedImageUri"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_scanResultFragment_to_tryOnFragment"
+            app:destination="@id/tryOnFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+    <!-- AI Style Assistant -->
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.fashnix.app.ui.chat.ChatFragment"
+        android:label="@string/style_assistant"
+        tools:layout="@layout/fragment_chat">
+        <argument
+            android:name="autoQuery"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <!-- Profile & Luxury Settings -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.fashnix.app.ui.profile.ProfileFragment"
+        android:label="@string/profile_title"
+        tools:layout="@layout/fragment_profile" />
+
+    <!-- Virtual Try-On -->
+    <fragment
+        android:id="@+id/tryOnFragment"
+        android:name="com.fashnix.app.ui.tryon.TryOnFragment"
+        android:label="@string/try_on_title"
+        tools:layout="@layout/fragment_try_on" />
+
+    <!-- Laundry Dashboard -->
+    <fragment
+        android:id="@+id/laundryDashboardFragment"
+        android:name="com.fashnix.app.ui.laundry.LaundryDashboardFragment"
+        android:label="@string/laundry_title"
+        tools:layout="@layout/fragment_laundry_dashboard" />
+
+    <fragment
+        android:id="@+id/createOutfitFragment"
+        android:name="com.fashnix.app.ui.planner.CreateOutfitFragment"
+        android:label="@string/add_outfit"
+        tools:layout="@layout/fragment_create_outfit">
+        <argument
+            android:name="date"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/plannerFragment"
+        android:name="com.fashnix.app.ui.planner.PlannerFragment"
+        android:label="@string/planner_title"
+        tools:layout="@layout/fragment_planner">
+        <action
+            android:id="@+id/action_plannerFragment_to_createOutfitFragment"
+            app:destination="@id/createOutfitFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/remixFragment"
+        android:name="com.fashnix.app.ui.hub.RemixFragment"
+        android:label="@string/remix_wardrobe"
+        tools:layout="@layout/fragment_remix" />
+
+    <fragment
+        android:id="@+id/gapAnalyzerFragment"
+        android:name="com.fashnix.app.ui.hub.GapAnalyzerFragment"
+        android:label="@string/gap_analyzer"
+        tools:layout="@layout/fragment_gap_analyzer" />
+
+    <fragment
+        android:id="@+id/styleChallengesFragment"
+        android:name="com.fashnix.app.ui.hub.StyleChallengesFragment"
+        android:label="@string/style_challenges"
+        tools:layout="@layout/fragment_style_challenges" />
+
+    <fragment
+        android:id="@+id/dressCodeAdvisorFragment"
+        android:name="com.fashnix.app.ui.advisor.DressCodeAdvisorFragment"
+        android:label="@string/advisor_title"
+        tools:layout="@layout/fragment_dress_code_advisor" />
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.fashnix.app.ui.scan.CameraFragment"
+        android:label="Camera"
+        tools:layout="@layout/fragment_camera" />
+
+    <fragment
+        android:id="@+id/styleQuizFragment"
+        android:name="com.fashnix.app.ui.profile.StyleQuizFragment"
+        android:label="@string/style_quiz_label"
+        tools:layout="@layout/fragment_style_quiz" />
+
+    <fragment
+        android:id="@+id/intelligenceHubFragment"
+        android:name="com.fashnix.app.ui.hub.IntelligenceHubFragment"
+        android:label="@string/hub_title"
+        tools:layout="@layout/fragment_intelligence_hub" />
+
+    <fragment
+        android:id="@+id/capsuleGeneratorFragment"
+        android:name="com.fashnix.app.ui.hub.CapsuleGeneratorFragment"
+        android:label="Capsule Generator"
+        tools:layout="@layout/fragment_capsule_generator" />
+
+    <fragment
+        android:id="@+id/wardrobeAnalyticsFragment"
+        android:name="com.fashnix.app.ui.hub.WardrobeAnalyticsFragment"
+        android:label="Wardrobe Analytics"
+        tools:layout="@layout/fragment_wardrobe_analytics" />
+
+</navigation>

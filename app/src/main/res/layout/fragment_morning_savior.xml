@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_morning_savior"
+    android:clipToPadding="false"
+    android:clipChildren="false">
+
+    <View
+        android:id="@+id/glowLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_circle_glass"
+        android:alpha="0.18" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:paddingBottom="140dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="18dp"
+            android:paddingBottom="120dp">
+
+            <FrameLayout
+                android:id="@+id/topIsland"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="144dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/glass_card_bg"
+                android:elevation="18dp"
+                android:padding="18dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/weatherTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AI Pick"
+                        android:textColor="@color/text_primary"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.1"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:id="@+id/weatherStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Sunny - 25C - Ready"
+                        android:textColor="@color/text_primary"
+                        android:textSize="13sp"
+                        android:fontFamily="sans-serif-light" />
+
+                    <TextView
+                        android:id="@+id/weatherHint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="80dp"
+                        android:text="Clean top, fitted bottom, sharp shoes."
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif"
+                        android:lineSpacingExtra="3dp"
+                        android:letterSpacing="0.02" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginEnd="-28dp"
+                    android:layout_marginBottom="-28dp"
+                    android:background="@drawable/bg_circle_primary" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/middleIsland"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="510dp"
+                android:layout_marginBottom="18dp"
+                android:clipToPadding="false"
+                android:clipChildren="false">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_selector_glass_card"
+                    android:translationY="16dp"
+                    android:rotation="-1.2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_circle_glass"
+                    android:translationY="8dp"
+                    android:rotation="0.8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:background="@drawable/glass_card_bg"
+                    android:elevation="24dp">
+
+                    <TextView
+                        android:id="@+id/mixMatchTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mix Deck"
+                        android:textColor="@color/text_primary"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.08"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:id="@+id/mixMatchHint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Compare or swap."
+                        android:textColor="@color/text_muted"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:clipChildren="false"
+                        android:orientation="vertical"
+                        android:paddingTop="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="12dp">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="392dp"
+                                android:clipToPadding="false"
+                                android:clipChildren="false">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="300dp"
+                                    android:layout_marginTop="24dp"
+                                    android:layout_marginStart="24dp"
+                                    android:background="@drawable/bg_circle_primary"
+                                    android:alpha="0.12"
+                                    android:rotation="-6" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/outfitCardLayer2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:layout_marginTop="22dp"
+                                    android:layout_marginStart="16dp"
+                                    app:cardBackgroundColor="@color/surface_glass"
+                                    app:cardCornerRadius="32dp"
+                                    app:cardElevation="16dp"
+                                    android:translationY="24dp"
+                                    android:rotation="-3" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/outfitCardLayer1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="270dp"
+                                    app:cardBackgroundColor="@color/surface_glassmorphism"
+                                    app:cardCornerRadius="36dp"
+                                    app:cardElevation="24dp"
+                                    android:translationY="12dp"
+                                    android:rotation="-1" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/currentOutfitCard"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="392dp"
+                                    app:cardBackgroundColor="@color/surface_elevated"
+                                    app:cardCornerRadius="42dp"
+                                    app:cardElevation="34dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:padding="18dp">
+
+                                        <ImageView
+                                            android:id="@+id/currentOutfitImage"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="104dp"
+                                            android:layout_marginBottom="12dp"
+                                            android:background="@drawable/bg_selector_glass_card"
+                                            android:clipToOutline="true"
+                                            android:contentDescription="@string/selected_outfit"
+                                            android:scaleType="centerCrop"
+                                            tools:src="@drawable/sample_apparel_card" />
+
+                                        <TextView
+                                            android:id="@+id/currentOutfitLabel"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Navy Power Suit"
+                                            android:textColor="@color/text_primary"
+                                            android:textSize="18sp"
+                                            android:textStyle="bold"
+                                            android:letterSpacing="0.08"
+                                            android:fontFamily="sans-serif-medium" />
+
+                                        <TextView
+                                            android:id="@+id/currentOutfitMood"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="6dp"
+                                            android:text="Black shoes + navy pants + white shirt"
+                                            android:textColor="@color/text_primary"
+                                            android:textSize="12sp"
+                                            android:maxLines="1"
+                                            android:ellipsize="end"
+                                            android:fontFamily="sans-serif" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="16dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Pieces"
+                                                android:textColor="@color/text_muted"
+                                                android:textSize="12sp"
+                                                android:fontFamily="sans-serif-medium" />
+
+                                            <TextView
+                                            android:id="@+id/currentOutfitDetails"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:text="White Shirt + Navy Pants + Black Derby"
+                                            android:textColor="@color/text_primary"
+                                            android:textSize="13sp"
+                                            android:maxLines="1"
+                                            android:ellipsize="end"
+                                            android:fontFamily="sans-serif" />
+
+                                            <TextView
+                                            android:id="@+id/currentOutfitUrgency"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:text="AI picked from wardrobe."
+                                            android:textColor="@color/text_secondary"
+                                            android:textSize="11sp"
+                                            android:maxLines="1"
+                                            android:ellipsize="end"
+                                            android:fontFamily="sans-serif-light" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="18dp"
+                                            android:orientation="horizontal"
+                                            android:weightSum="2">
+
+                                            <com.google.android.material.button.MaterialButton
+                                                android:id="@+id/wearButton"
+                                                style="@style/Widget.MaterialComponents.Button"
+                                                android:layout_width="0dp"
+                                                android:layout_height="54dp"
+                                                android:layout_marginEnd="10dp"
+                                                android:layout_weight="1"
+                                                android:backgroundTint="@color/primary"
+                                                android:text="Wear This"
+                                                android:textAllCaps="true"
+                                                android:textColor="@android:color/white"
+                                                android:textSize="13sp" />
+
+                                            <com.google.android.material.button.MaterialButton
+                                                android:id="@+id/compareButton"
+                                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                                android:layout_width="0dp"
+                                                android:layout_height="54dp"
+                                                android:layout_weight="1"
+                                                app:strokeColor="@color/primary"
+                                                app:strokeWidth="1dp"
+                                                android:text="This or That?"
+                                                android:textAllCaps="true"
+                                                android:textColor="@color/primary"
+                                                android:textSize="13sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomIsland"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/glass_card_bg"
+                android:elevation="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Swap"
+                    android:textColor="@color/text_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.06"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Tap a piece."
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <Button
+                        android:id="@+id/chipShoes"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/surface_glass"
+                        android:strokeColor="@color/primary"
+                        android:text="Shoes"
+                        android:textAllCaps="false"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/chipPants"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/surface_glass"
+                        android:strokeColor="@color/primary"
+                        android:text="Pants"
+                        android:textAllCaps="false"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/chipShirt"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/surface_glass"
+                        android:strokeColor="@color/primary"
+                        android:text="Shirt"
+                        android:textAllCaps="false"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/chipJacket"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/surface_glass"
+                        android:strokeColor="@color/primary"
+                        android:text="Jacket"
+                        android:textAllCaps="false"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/aiAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="AI score 92%."
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:lineSpacingExtra="4dp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/morningDial"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_gravity="bottom|end"
+        android:visibility="gone"
+        android:background="@drawable/bg_circle_primary"
+        android:translationY="30dp"
+        android:translationX="30dp"
+        android:elevation="40dp">
+
+        <TextView
+            android:id="@+id/dialLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Morning Dial"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12"
+            android:fontFamily="sans-serif-medium" />
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

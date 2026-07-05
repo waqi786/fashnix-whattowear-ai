@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">फैशनिक्स</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">अपनी वॉर्डरोब स्कैन करें</string>
+    <string name="onboarding_subtitle_1">AI को तुरंत अपने कपड़ों, रंगों और अवसरों की पहचान करने दें।</string>
+    <string name="onboarding_title_2">AI स्टाइल सलाह पाएं</string>
+    <string name="onboarding_subtitle_2">आपका पर्सनल स्टाइलिस्ट आपकी वॉर्डरोब जानता है और शानदार सुझाव देता है।</string>
+    <string name="onboarding_title_3">अपने आउटफिट प्लान करें</string>
+    <string name="onboarding_subtitle_3">सप्ताह, यात्रा, इवेंट के लिए लुक व्यवस्थित करें — रिमाइंडर के साथ।</string>
+    <string name="skip">छोड़ें</string>
+    <string name="next">आगे</string>
+    <string name="join_the_elite">ELITE से जुड़ें</string>
+
+    <!-- Auth -->
+    <string name="email">ईमेल</string>
+    <string name="password">पासवर्ड</string>
+    <string name="confirm_password">पासवर्ड की पुष्टि करें</string>
+    <string name="full_name">पूरा नाम</string>
+    <string name="gender">लिंग</string>
+    <string name="body_type">शारीरिक संरचना</string>
+    <string name="men">पुरुष</string>
+    <string name="women">महिला</string>
+    <string name="unisex">यूनिसेक्स</string>
+    <string name="slim">स्लिम</string>
+    <string name="athletic">एथलेटिक</string>
+    <string name="plus_size">प्लस-साइज़</string>
+    <string name="initialize_session">सत्र प्रारंभ करें</string>
+    <string name="create_account">खाता बनाएं</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="dont_have_account">खाता नहीं है? साइन अप करें</string>
+    <string name="already_have_account">पहले से खाता है? साइन इन करें</string>
+    <string name="send_reset_email">रीसेट ईमेल भेजें</string>
+    <string name="reset_email_sent">पासवर्ड रीसेट ईमेल भेज दिया गया।</string>
+    <string name="field_required">यह फ़ील्ड आवश्यक है</string>
+    <string name="passwords_do_not_match">पासवर्ड मेल नहीं खाते</string>
+    <string name="invalid_email">अमान्य ईमेल प्रारूप</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">होम</string>
+    <string name="nav_wardrobe">वॉर्डरोब</string>
+    <string name="nav_scan">स्कैन</string>
+    <string name="nav_chat">AI चैट</string>
+    <string name="nav_planner">प्लानर</string>
+
+    <!-- Home Screen -->
+    <string name="weather_unavailable">मौसम उपलब्ध नहीं</string>
+    <string name="retry">पुनः प्रयास करें</string>
+    <string name="today_pick">आज का चयन</string>
+    <string name="wear_this">इसे पहनें</string>
+    <string name="surprise_me">चौंकाइए</string>
+    <string name="try_on">ट्राय ऑन करें</string>
+    <string name="smart_scan">स्मार्ट स्कैन</string>
+    <string name="import_item">आयात करें</string>
+    <string name="laundry_check">🧺 लॉन्ड्री चेक</string>
+    <string name="recent_scans">हाल की स्कैन</string>
+    <string name="remix_wardrobe">वॉर्डरोब रीमिक्स करें</string>
+    <string name="ask_ai_stylist">आउटफिट सलाह चाहिए? आपका पर्सनल AI स्टाइलिस्ट तैयार है।</string>
+    <string name="chat_now">अभी चैट करें</string>
+    <string name="streak_format">🔥 %d दिन की स्ट्रीक!</string>
+    <string name="event_advisor">किसी इवेंट के लिए तैयार हो रहे हैं?</string>
+    <string name="get_advice">सलाह लें</string>
+    <string name="high_uv_warning">आज UV इंडेक्स %.0f है – पूरी आस्तीन और सनग्लास पहनें</string>
+
+    <!-- Weather -->
+    <string name="rainy_tip">बारिश का दिन – वाटरप्रूफ बूट और ट्रेंच कोट बेहतरीन रहेंगे!</string>
+    <string name="sunny_tip">तेज़ धूप – हल्के रंग और हैट कमाल लगते हैं।</string>
+    <string name="cold_tip">ठंडा दिन – स्टाइलिश जैकेट के साथ लेयर करें।</string>
+    <string name="hot_tip">भीषण गर्मी – सांस लेने वाले कपड़े आपके सबसे अच्छे दोस्त हैं।</string>
+    <string name="cloudy_tip">बादल – एक चमकीला रंग आपके मूड को बेहतर बना सकता है।</string>
+
+    <!-- Wardrobe Screen -->
+    <string name="wardrobe_title">वॉर्डरोब</string>
+    <string name="search_hint">अपनी वॉर्डरोब खोजें…</string>
+    <string name="filter_category">श्रेणी</string>
+    <string name="filter_colour">रंग</string>
+    <string name="filter_occasion">अवसर</string>
+    <string name="all">सभी</string>
+    <string name="accessories_result">एक्सेसरीज़</string>
+    <string name="apparel">परिधान</string>
+    <string name="footwear">जूते</string>
+    <string name="personal_care">व्यक्तिगत देखभाल</string>
+    <string name="show_family_items">परिवार के आइटम दिखाएं</string>
+    <string name="scan_item">आइटम स्कैन करें</string>
+    <string name="worn_format">पहना: %d</string>
+    <string name="colour_selector">रंग चुनें</string>
+    <string name="edit">संपादित करें</string>
+    <string name="delete">हटाएं</string>
+    <string name="mark_as_worn">पहना हुआ चिह्नित करें</string>
+    <string name="match_accessories">एक्सेसरीज़ मिलाएं</string>
+
+    <!-- Clothing Detail Screen -->
+    <string name="details">विवरण</string>
+    <string name="metrics">माप</string>
+    <string name="laundry">लॉन्ड्री</string>
+    <string name="cost_per_wear">प्रति पहनावा लागत</string>
+    <string name="sustainability_score">सस्टेनेबिलिटी स्कोर</string>
+    <string name="last_worn">आखिरी बार पहना</string>
+    <string name="never">कभी नहीं</string>
+    <string name="remind_me_to_wash">धोने की याद दिलाएं</string>
+    <string name="wash_interval">हर X बार पहनने पर धोएं</string>
+    <string name="delete_confirmation">\'%s\' को वॉर्डरोब से हटाएं? यह वापस नहीं आ सकता।</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="save">सहेजें</string>
+    <string name="saving">सहेजा जा रहा है…</string>
+    <string name="item_marked_worn">%s पहना हुआ चिह्नित!</string>
+    <string name="edit_item">आइटम संपादित करें</string>
+
+    <!-- Camera Screen -->
+    <string name="grant_permission">अनुमति दें</string>
+    <string name="camera_permission_rationale">कपड़ों को स्कैन करने के लिए कैमरा एक्सेस आवश्यक है।</string>
+    <string name="retry_shot">पुनः लें</string>
+    <string name="use_photo">उपयोग करें</string>
+
+    <!-- Scan Result Screen -->
+    <string name="ai_analysis">AI विश्लेषण परिणाम</string>
+    <string name="category_label">श्रेणी</string>
+    <string name="colour_label">रंग</string>
+    <string name="occasion_label">अवसर</string>
+    <string name="gender_label">लिंग</string>
+    <string name="tap_to_choose_colour">हमें रंग का यकीन नहीं — कृपया चुनने के लिए टैप करें</string>
+    <string name="add_to_wardrobe">वॉर्डरोब में जोड़ें</string>
+    <string name="styling_tips">स्टाइलिंग टिप्स</string>
+    <string name="accessories">एक्सेसरीज़</string>
+    <string name="added_to_wardrobe">वॉर्डरोब में जोड़ दिया!</string>
+    <string name="uploading">अपलोड हो रहा है…</string>
+    <string name="change_occasion">अवसर बदलें</string>
+    <string name="change_colour">रंग बदलें</string>
+
+    <!-- Chat Screen -->
+    <string name="style_assistant">स्टाइल असिस्टेंट</string>
+    <string name="clear_chat">चैट साफ़ करें</string>
+    <string name="welcome_chat">👗 हाय, मैं आपका AI स्टाइलिस्ट हूं! मुझे आपकी वॉर्डरोब पता है और मैं आउटफिट आइडियाज़, इवेंट ड्रेसिंग, पैकिंग लिस्ट और अधिक में मदद कर सकता हूं। बस कुछ भी पूछें!</string>
+    <string name="quick_wear_today">आज क्या पहनूं?</string>
+    <string name="quick_style_suit">नेवी सूट को कैसे स्टाइल करूं?</string>
+    <string name="quick_packing">सप्ताहांत यात्रा की पैकिंग लिस्ट?</string>
+    <string name="quick_event">इवेंट ड्रेस कोड</string>
+    <string name="quick_match_blue">मेरी नीली शर्ट के साथ क्या मिलेगा?</string>
+    <string name="message_hint">फैशनिक्स से पूछें…</string>
+    <string name="voice_input_unavailable">वॉइस इनपुट उपलब्ध नहीं</string>
+    <string name="error_chat_fallback">मैं कनेक्ट नहीं कर सका। कृपया पुनः प्रयास करें।</string>
+    <string name="retry_chat">पुनः प्रयास करें</string>
+
+    <!-- Planner Screen -->
+    <string name="planner_title">आउटफिट प्लानर</string>
+    <string name="add_outfit">आउटफिट जोड़ें</string>
+    <string name="outfit_name">आउटफिट का नाम</string>
+    <string name="select_items">आइटम चुनें</string>
+    <string name="set_reminder">रिमाइंडर सेट करें</string>
+    <string name="mood">मूड</string>
+    <string name="notes">नोट्स</string>
+    <string name="confident">आत्मविश्वासी</string>
+    <string name="comfortable">आरामदायक</string>
+    <string name="bold">साहसी</string>
+    <string name="professional">पेशेवर</string>
+    <string name="casual">कैज़ुअल</string>
+    <string name="festive">त्योहारी</string>
+    <string name="mark_as_worn_outfit">पहना हुआ चिह्नित करें</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">प्रोफ़ाइल</string>
+    <string name="style_dna">स्टाइल DNA</string>
+    <string name="discover_style">अपना स्टाइल खोजें</string>
+    <string name="preferences">प्राथमिकताएं</string>
+    <string name="favourite_occasions">पसंदीदा अवसर</string>
+    <string name="favourite_colours">पसंदीदा रंग</string>
+    <string name="skin_tone">त्वचा का रंग</string>
+    <string name="streak_badges">स्ट्रीक और बैज</string>
+    <string name="view_all_badges">सभी बैज देखें</string>
+    <string name="language">भाषा</string>
+    <string name="family_closet">पारिवारिक अलमारी</string>
+    <string name="create_new_group">नया समूह बनाएं</string>
+    <string name="join_with_code">कोड से जुड़ें</string>
+    <string name="invite_code">आमंत्रण कोड</string>
+    <string name="copy_code">कोड कॉपी करें</string>
+    <string name="share_code">शेयर करें</string>
+    <string name="leave_group">समूह छोड़ें</string>
+    <string name="wardrobe_insights">वॉर्डरोब अंतर्दृष्टि</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="logout_confirmation">क्या आप वाकई लॉग आउट करना चाहते हैं?</string>
+    <string name="choose_language">भाषा चुनें</string>
+
+    <!-- Languages -->
+    <string name="lang_english">English</string>
+    <string name="lang_urdu">اردو</string>
+    <string name="lang_hindi">हिंदी</string>
+    <string name="lang_arabic">العربية</string>
+    <string name="lang_french">Français</string>
+    <string name="lang_spanish">Español</string>
+    <string name="lang_turkish">Türkçe</string>
+
+    <!-- Laundry Dashboard -->
+    <string name="laundry_title">लॉन्ड्री चेक</string>
+    <string name="mark_as_clean">साफ़ चिह्नित करें</string>
+    <string name="worn_times_format">आखिरी धुलाई के बाद %d बार पहना</string>
+    <string name="all_clean">आपके सभी कपड़े ताज़े और साफ़ हैं! 🌟</string>
+    <string name="laundry_marked_clean">%s साफ़ चिह्नित! 🧺</string>
+
+    <!-- Virtual Try-On -->
+    <string name="try_on_title">वर्चुअल ट्राय-ऑन</string>
+    <string name="stand_back">पीछे हटें ताकि आपका पूरा धड़ दिखाई दे</string>
+    <string name="move_back">📷 पीछे हटें – आपका शरीर पहचाना नहीं जा रहा</string>
+    <string name="capture">कैप्चर करें</string>
+    <string name="look_saved">लुक सहेजा गया! ✨ अपनी गैलरी देखें।</string>
+
+    <!-- Event Dress Code Advisor -->
+    <string name="advisor_title">इवेंट ड्रेस कोड सलाहकार</string>
+    <string name="select_event">इवेंट चुनें</string>
+    <string name="dress_code_guide">ड्रेस कोड गाइड</string>
+    <string name="from_wardrobe">आपकी वॉर्डरोब से</string>
+    <string name="plan_this_outfit">यह आउटफिट प्लान करें</string>
+    <string name="job_interview">नौकरी साक्षात्कार</string>
+    <string name="cocktail_party">कॉकटेल पार्टी</string>
+    <string name="beach_wedding">बीच वेडिंग</string>
+    <string name="festive_ethnic">त्योहारी एथनिक (ईद/दिवाली)</string>
+    <string name="funeral_memorial">शोक सभा / स्मारक</string>
+    <string name="black_tie_gala">ब्लैक टाई गाला</string>
+    <string name="first_date">पहली डेट</string>
+    <string name="casual_friday">कैज़ुअल फ्राइडे</string>
+    <string name="sports_event">खेल आयोजन</string>
+    <string name="destination_wedding">डेस्टिनेशन वेडिंग</string>
+    <string name="birthday_party">जन्मदिन पार्टी</string>
+    <string name="business_casual">बिज़नेस कैज़ुअल</string>
+
+    <!-- Family Closet -->
+    <string name="family_closet_title">पारिवारिक अलमारी</string>
+    <string name="borrow">उधार लें</string>
+    <string name="return_item">वापस करें</string>
+    <string name="family_outfit">पारिवारिक आउटफिट</string>
+    <string name="borrow_success">उधार ले लिया! 7 दिनों में वापस करें।</string>
+    <string name="invalid_code">अमान्य कोड – कृपया जांचें और पुनः प्रयास करें।</string>
+    <string name="left_group">आपने समूह छोड़ दिया है।</string>
+    <string name="group_created">समूह बन गया! अपना आमंत्रण कोड साझा करें।</string>
+    <string name="share_message">फैशनिक्स पर मेरी पारिवारिक अलमारी में शामिल हों! कोड: %s</string>
+
+    <!-- Intelligence Hub -->
+    <string name="hub_title">इंटेलिजेंस हब</string>
+    <string name="remix_wardrobe_short">वॉर्डरोब रीमिक्स करें</string>
+    <string name="save_look">लुक सहेजें</string>
+    <string name="gap_analyzer">कमी विश्लेषक</string>
+    <string name="missing_casual_footwear">आपके पास कैज़ुअल फुटवियर नहीं है।</string>
+    <string name="missing_formal">अपनी वॉर्डरोब में और फॉर्मल आउटफिट जोड़ें।</string>
+    <string name="missing_accessories">आपकी वॉर्डरोब में एक्सेसरीज़ की कमी है – एक घड़ी या बेल्ट बहुत मायने रखती है।</string>
+    <string name="suggested_item">सुझाया गया आइटम</string>
+    <string name="capsule_wardrobe">कैप्सूल वॉर्डरोब जनरेटर</string>
+    <string name="destination">गंतव्य</string>
+    <string name="days">दिन</string>
+    <string name="trip_type">यात्रा का प्रकार</string>
+    <string name="generate_list">सूची बनाएं</string>
+    <string name="business_trip">व्यवसाय</string>
+    <string name="beach_trip">समुद्र तट</string>
+    <string name="adventure_trip">साहसिक</string>
+    <string name="city_break_trip">शहर भ्रमण</string>
+    <string name="mountain_trip">पहाड़</string>
+    <string name="copy_list">सूची कॉपी करें</string>
+    <string name="list_copied">पैकिंग सूची कॉपी हो गई!</string>
+    <string name="cost_per_wear_dashboard">प्रति पहनावा लागत डैशबोर्ड</string>
+    <string name="best_value">सर्वश्रेष्ठ मूल्य 🏆</string>
+    <string name="never_worn_warning">कभी नहीं पहना – दान करने पर विचार करें</string>
+    <string name="style_challenges">स्टाइल चुनौतियां</string>
+    <string name="monochrome_week">मोनोक्रोम सप्ताह</string>
+    <string name="monochrome_desc">एक ही रंग के परिवार में 7 दिन तक आउटफिट पहनें।</string>
+    <string name="accessory_week">एक्सेसरी सप्ताह</string>
+    <string name="accessory_desc">हर आउटफिट में 7 दिन तक कम से कम एक एक्सेसरी शामिल करें।</string>
+    <string name="formal_week">फॉर्मल सप्ताह</string>
+    <string name="formal_desc">लगातार 5 दिन फॉर्मल पहनावा पहनें।</string>
+
+    <!-- Style Quiz -->
+    <string name="quiz_colour_palette">पसंदीदा रंग पैलेट?</string>
+    <string name="neutrals">न्यूट्रल</string>
+    <string name="bold_bright">बोल्ड और ब्राइट</string>
+    <string name="pastels">पेस्टल</string>
+    <string name="monochrome">मोनोक्रोम</string>
+    <string name="quiz_occasion">सामान्य अवसर?</string>
+    <string name="work">काम</string>
+    <string name="formal_events">फॉर्मल आयोजन</string>
+    <string name="mixed">मिला-जुला</string>
+    <string name="quiz_inspiration">स्टाइल प्रेरणा?</string>
+    <string name="classic">क्लासिक</string>
+    <string name="streetwear">स्ट्रीटवियर</string>
+    <string name="bohemian">बोहेमियन</string>
+    <string name="minimalist">मिनिमलिस्ट</string>
+    <string name="quiz_silhouette">पसंदीदा सिल्हूट?</string>
+    <string name="fitted">फिटेड</string>
+    <string name="relaxed">रिलैक्स्ड</string>
+    <string name="structured">स्ट्रक्चर्ड</string>
+    <string name="flowy">फ्लोई</string>
+    <string name="quiz_priority">प्रमुख फैशन प्राथमिकता?</string>
+    <string name="comfort">आराम</string>
+    <string name="statement">स्टेटमेंट</string>
+    <string name="versatility">बहुमुखी प्रतिभा</string>
+    <string name="elegance">सुंदरता</string>
+
+    <!-- Style DNA Labels -->
+    <string name="dna_classic_minimalist">क्लासिक मिनिमलिस्ट</string>
+    <string name="dna_bold_trendsetter">बोल्ड ट्रेंडसेटर</string>
+    <string name="dna_casual_comfort">कैज़ुअल कम्फर्ट</string>
+    <string name="dna_elegant_professional">एलिगेंट प्रोफेशनल</string>
+    <string name="dna_bohemian_spirit">बोहेमियन स्पिरिट</string>
+
+    <!-- Badges -->
+    <string name="badge_7_day_streaker">7-दिन स्ट्रीकर</string>
+    <string name="badge_14_day_streaker">दो-सप्ताह वंडर</string>
+    <string name="badge_fashion_adventurer">फैशन एडवेंचरर</string>
+    <string name="badge_mix_match_master">मिक्स एंड मैच मास्टर</string>
+    <string name="badge_family_stylist">फैमिली स्टाइलिस्ट</string>
+    <string name="badge_laundry_hero">लॉन्ड्री हीरो</string>
+    <string name="badge_unlocked_title">🏆 बैज अनलॉक!</string>
+    <string name="locked">लॉक</string>
+    <string name="earned_on">%s को अर्जित किया</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_daily_outfit">दैनिक आउटफिट</string>
+    <string name="notification_channel_laundry">लॉन्ड्री रिमाइंडर</string>
+    <string name="notification_channel_family">पारिवारिक अलमारी</string>
+    <string name="notification_channel_badges">बैज और पुरस्कार</string>
+    <string name="notification_time_to_wash_title">धोने का समय! 🧺</string>
+    <string name="notification_time_to_wash_body">आपके %s को धोने की ज़रूरत है।</string>
+    <string name="notification_borrow_title">आइटम उधार लिया गया</string>
+    <string name="notification_borrow_body">%1$s ने आपका %2$s उधार लिया।</string>
+    <string name="notification_return_title">आइटम वापस किया गया</string>
+    <string name="notification_return_body">%1$s ने आपका %2$s वापस कर दिया।</string>
+    <string name="notification_reminder_return_title">वापसी रिमाइंडर</string>
+    <string name="notification_reminder_return_body">%1$s को %2$s को वापस करना न भूलें!</string>
+
+    <!-- App Actions -->
+    <string name="shortcut_outfit_label">फैशनिक्स से पूछें क्या पहनना है</string>
+    <string name="shortcut_outfit_long_label">अपनी वॉर्डरोब से दैनिक आउटफिट सुझाव प्राप्त करें</string>
+    <string name="shortcut_outfit_query">आज मैं क्या पहनूं?</string>
+
+    <!-- General -->
+    <string name="ok">ठीक है</string>
+    <string name="yes">हां</string>
+    <string name="no">नहीं</string>
+    <string name="loading">लोड हो रहा है…</string>
+    <string name="error_generic">कुछ गलत हो गया। कृपया पुनः प्रयास करें।</string>
+    <string name="mic_description">माइक्रोफ़ोन</string>
+    <string name="send_description">भेजें</string>
+    <!-- Hindi -->
+    <string name="date">दिनांक</string>
+    <string name="time">समय</string>
+</resources>

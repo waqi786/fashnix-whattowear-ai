@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:centerColor="#FFFFFF"
+                android:endColor="#FFF0E4"
+                android:startColor="#FFF9F2" />
+        </shape>
+    </item>
+    <item android:top="-60dp" android:left="-50dp">
+        <shape android:shape="oval">
+            <size android:width="320dp" android:height="320dp" />
+            <gradient
+                android:angle="0"
+                android:centerColor="#33FF8A1F"
+                android:endColor="#00FFFFFF"
+                android:startColor="#66FFB36B" />
+        </shape>
+    </item>
+    <item android:top="180dp" android:right="-80dp">
+        <shape android:shape="oval">
+            <size android:width="280dp" android:height="280dp" />
+            <gradient
+                android:angle="0"
+                android:centerColor="#22D96710"
+                android:endColor="#00FFFFFF"
+                android:startColor="#44FF5A00" />
+        </shape>
+    </item>
+</layer-list>

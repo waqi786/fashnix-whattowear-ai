@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Solid Aesthetic Background Element -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ring_gradient"
+        android:alpha="0.03" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="40dp">
+
+            <!-- Title Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI INTELLIGENCE"
+                android:textColor="@color/primary"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.25" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Capsule\nGenerator"
+                android:textColor="@color/white"
+                android:textSize="42sp"
+                android:fontFamily="sans-serif-black"
+                android:lineHeight="42sp"
+                android:letterSpacing="-0.04" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Engineering minimalist travel wardrobes for the modern elite."
+                android:textColor="@color/text_secondary"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Solid Control Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/controlCard"
+                style="@style/LuxuryCardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                app:cardBackgroundColor="@color/surface"
+                app:strokeColor="@color/border_standard"
+                app:strokeWidth="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="28dp">
+
+                    <TextView
+                        android:id="@+id/statsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="READY TO INITIALIZE AUDIT"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="10sp"
+                        android:fontFamily="sans-serif-black"
+                        android:letterSpacing="0.15" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/generateButton"
+                        style="@style/LuxuryButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="68dp"
+                        android:layout_marginTop="24dp"
+                        android:text="INITIALIZE GENERATION"
+                        android:textColor="@color/background"
+                        android:textSize="14sp"
+                        app:rippleColor="@color/accent_neon" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Loading State -->
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/loadingAnim"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:visibility="gone"
+                app:lottie_rawRes="@raw/fashion_loading"
+                app:lottie_colorFilter="@color/primary" />
+
+            <!-- Result Grid -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/capsuleRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_clothing_grid" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

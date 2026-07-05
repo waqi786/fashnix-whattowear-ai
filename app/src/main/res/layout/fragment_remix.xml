@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/remixToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationIconTint="@color/text_primary"
+            app:title="STYLE REMIX"
+            app:titleCentered="true"
+            app:titleTextColor="@color/text_primary"
+            app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="@color/surface_glass"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/border_glass">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AI COMBINATIONS"
+                        android:textColor="@color/primary"
+                        android:textSize="10sp"
+                        android:letterSpacing="0.2"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discover New Looks"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginTop="8dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRegenerate"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:text="SHUFFLE COMBINATIONS"
+                        android:backgroundTint="@color/primary"
+                        app:cornerRadius="16dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/remixViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                android:clipToPadding="false"
+                android:clipChildren="false" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loadingLottie"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/fashion_loading"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

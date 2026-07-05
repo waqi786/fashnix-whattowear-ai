@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_black">
+
+    <LinearLayout
+        android:id="@+id/splashPanel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="34dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="284dp"
+            android:layout_height="246dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/applogo_splash" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:letterSpacing="0"
+            android:text="Fashnix"
+            android:textColor="@color/white"
+            android:textSize="39sp" />
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:text="Your wardrobe, styled smarter."
+            android:textColor="#E8C8B0"
+            android:textSize="16sp" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/loader"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:indeterminate="true"
+            app:indicatorColor="@color/primary"
+            app:trackColor="#333333"
+            app:trackCornerRadius="8dp"
+            app:trackThickness="4dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.12"
+        android:text="AI WARDROBE ASSISTANT"
+        android:textColor="@color/primary_light"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

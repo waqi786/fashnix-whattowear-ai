@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Fashnix</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Escanea tu guardarropa</string>
+    <string name="onboarding_subtitle_1">Deja que la IA identifique al instante tu ropa, colores y ocasiones.</string>
+    <string name="onboarding_title_2">Recibe consejos de estilo con IA</string>
+    <string name="onboarding_subtitle_2">Tu estilista personal conoce tu guardarropa y te da sugerencias inteligentes.</string>
+    <string name="onboarding_title_3">Planifica tus conjuntos</string>
+    <string name="onboarding_subtitle_3">Organiza looks para la semana, viajes, eventos — con recordatorios.</string>
+    <string name="skip">SALTAR</string>
+    <string name="next">SIGUIENTE</string>
+    <string name="join_the_elite">ÚNETE A LA ÉLITE</string>
+
+    <!-- Auth -->
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="full_name">Nombre completo</string>
+    <string name="gender">Género</string>
+    <string name="body_type">Tipo de cuerpo</string>
+    <string name="men">Hombre</string>
+    <string name="women">Mujer</string>
+    <string name="unisex">Unisex</string>
+    <string name="slim">Delgado</string>
+    <string name="athletic">Atlético</string>
+    <string name="plus_size">Talla grande</string>
+    <string name="initialize_session">INICIAR SESIÓN</string>
+    <string name="create_account">CREAR CUENTA</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="dont_have_account">¿No tienes cuenta? Regístrate</string>
+    <string name="already_have_account">¿Ya tienes cuenta? Inicia sesión</string>
+    <string name="send_reset_email">Enviar correo de restablecimiento</string>
+    <string name="reset_email_sent">Correo de restablecimiento enviado.</string>
+    <string name="field_required">Este campo es obligatorio</string>
+    <string name="passwords_do_not_match">Las contraseñas no coinciden</string>
+    <string name="invalid_email">Formato de correo inválido</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_wardrobe">Guardarropa</string>
+    <string name="nav_scan">Escanear</string>
+    <string name="nav_chat">Chat IA</string>
+    <string name="nav_planner">Planificador</string>
+
+    <!-- Home Screen -->
+    <string name="weather_unavailable">Clima no disponible</string>
+    <string name="retry">Reintentar</string>
+    <string name="today_pick">Selección de hoy</string>
+    <string name="wear_this">USAR ESTO</string>
+    <string name="surprise_me">SORPRÉNDEME</string>
+    <string name="try_on">PROBAR</string>
+    <string name="smart_scan">ESCANEO INTELIGENTE</string>
+    <string name="import_item">IMPORTAR</string>
+    <string name="laundry_check">🧺 REVISIÓN DE LAVADO</string>
+    <string name="recent_scans">Escaneos recientes</string>
+    <string name="remix_wardrobe">Remezclar mi guardarropa</string>
+    <string name="ask_ai_stylist">¿Necesitas ideas de conjunto? Tu estilista IA personal está listo.</string>
+    <string name="chat_now">CHATEAR AHORA</string>
+    <string name="streak_format">🔥 ¡%d días de racha!</string>
+    <string name="event_advisor">¿Te vistes para un evento?</string>
+    <string name="get_advice">OBTENER CONSEJO</string>
+    <string name="high_uv_warning">Hoy índice UV %.0f – usa mangas largas y gafas de sol</string>
+
+    <!-- Weather -->
+    <string name="rainy_tip">Día lluvioso – ¡botas impermeables y gabardina!</string>
+    <string name="sunny_tip">Sol radiante – los colores claros y un sombrero son geniales.</string>
+    <string name="cold_tip">Día frío – ponte capas con una chaqueta con estilo.</string>
+    <string name="hot_tip">Mucho calor – los tejidos transpirables son tus mejores amigos.</string>
+    <string name="cloudy_tip">Nublado – un toque de color puede alegrar tu humor.</string>
+
+    <!-- Wardrobe Screen -->
+    <string name="wardrobe_title">Guardarropa</string>
+    <string name="search_hint">Buscar en tu guardarropa…</string>
+    <string name="filter_category">Categoría</string>
+    <string name="filter_colour">Color</string>
+    <string name="filter_occasion">Ocasión</string>
+    <string name="all">Todos</string>
+    <string name="accessories_result">ACCESORIOS</string>
+    <string name="apparel">Ropa</string>
+    <string name="footwear">Calzado</string>
+    <string name="personal_care">Cuidado personal</string>
+    <string name="show_family_items">Mostrar artículos familiares</string>
+    <string name="scan_item">ESCANEAR PRENDA</string>
+    <string name="worn_format">Usado: %d</string>
+    <string name="colour_selector">Seleccionar color</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Eliminar</string>
+    <string name="mark_as_worn">Marcar como usado</string>
+    <string name="match_accessories">Combinar accesorios</string>
+
+    <!-- Clothing Detail Screen -->
+    <string name="details">Detalles</string>
+    <string name="metrics">Métricas</string>
+    <string name="laundry">Lavado</string>
+    <string name="cost_per_wear">Coste por uso</string>
+    <string name="sustainability_score">Puntuación de sostenibilidad</string>
+    <string name="last_worn">Último uso</string>
+    <string name="never">Nunca</string>
+    <string name="remind_me_to_wash">Recordarme lavar</string>
+    <string name="wash_interval">Lavar cada X usos</string>
+    <string name="delete_confirmation">¿Quitar \'%s\' de tu guardarropa? Esta acción no se puede deshacer.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Guardar</string>
+    <string name="saving">Guardando…</string>
+    <string name="item_marked_worn">¡%s marcado como usado!</string>
+    <string name="edit_item">Editar prenda</string>
+
+    <!-- Camera Screen -->
+    <string name="grant_permission">Conceder permiso</string>
+    <string name="camera_permission_rationale">El acceso a la cámara es necesario para escanear tu ropa.</string>
+    <string name="retry_shot">REPETIR</string>
+    <string name="use_photo">USAR</string>
+
+    <!-- Scan Result Screen -->
+    <string name="ai_analysis">Resultados del análisis de IA</string>
+    <string name="category_label">Categoría</string>
+    <string name="colour_label">Color</string>
+    <string name="occasion_label">Ocasión</string>
+    <string name="gender_label">Género</string>
+    <string name="tap_to_choose_colour">No estamos seguros del color — toca para elegir</string>
+    <string name="add_to_wardrobe">AÑADIR AL GUARDARROPA</string>
+    <string name="styling_tips">CONSEJOS DE ESTILO</string>
+    <string name="accessories">ACCESORIOS</string>
+    <string name="added_to_wardrobe">¡Añadido al guardarropa!</string>
+    <string name="uploading">Subiendo…</string>
+    <string name="change_occasion">Cambiar ocasión</string>
+    <string name="change_colour">Cambiar color</string>
+
+    <!-- Chat Screen -->
+    <string name="style_assistant">Asistente de estilo</string>
+    <string name="clear_chat">Limpiar chat</string>
+    <string name="welcome_chat">👗 ¡Hola, soy tu estilista IA! Conozco tu guardarropa y puedo ayudarte con ideas de conjuntos, códigos de vestimenta, listas de equipaje y más. ¡Solo pregunta!</string>
+    <string name="quick_wear_today">¿Qué me pongo hoy?</string>
+    <string name="quick_style_suit">¿Cómo estilizar mi traje azul marino?</string>
+    <string name="quick_packing">¿Lista de equipaje para una escapada de fin de semana?</string>
+    <string name="quick_event">Código de vestimenta de evento</string>
+    <string name="quick_match_blue">¿Qué combina con mi camisa azul?</string>
+    <string name="message_hint">Pregúntale a Fashnix…</string>
+    <string name="voice_input_unavailable">Entrada de voz no disponible</string>
+    <string name="error_chat_fallback">No pude conectar. Inténtalo de nuevo.</string>
+    <string name="retry_chat">REINTENTAR</string>
+
+    <!-- Planner Screen -->
+    <string name="planner_title">Planificador de conjuntos</string>
+    <string name="add_outfit">AÑADIR CONJUNTO</string>
+    <string name="outfit_name">Nombre del conjunto</string>
+    <string name="select_items">Seleccionar prendas</string>
+    <string name="set_reminder">Establecer recordatorio</string>
+    <string name="mood">Humor</string>
+    <string name="notes">Notas</string>
+    <string name="confident">Seguro</string>
+    <string name="comfortable">Cómodo</string>
+    <string name="bold">Audaz</string>
+    <string name="professional">Profesional</string>
+    <string name="casual">Informal</string>
+    <string name="festive">Festivo</string>
+    <string name="mark_as_worn_outfit">MARCAR COMO USADO</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">Perfil</string>
+    <string name="style_dna">ADN de estilo</string>
+    <string name="discover_style">DESCUBRE TU ESTILO</string>
+    <string name="preferences">Preferencias</string>
+    <string name="favourite_occasions">Ocasiones favoritas</string>
+    <string name="favourite_colours">Colores favoritos</string>
+    <string name="skin_tone">Tono de piel</string>
+    <string name="streak_badges">Racha e insignias</string>
+    <string name="view_all_badges">VER TODAS LAS INSIGNIAS</string>
+    <string name="language">Idioma</string>
+    <string name="family_closet">Armario familiar</string>
+    <string name="create_new_group">Crear nuevo grupo</string>
+    <string name="join_with_code">Unirse con código</string>
+    <string name="invite_code">Código de invitación</string>
+    <string name="copy_code">COPIAR CÓDIGO</string>
+    <string name="share_code">COMPARTIR</string>
+    <string name="leave_group">Abandonar grupo</string>
+    <string name="wardrobe_insights">Información del guardarropa</string>
+    <string name="logout">CERRAR SESIÓN</string>
+    <string name="logout_confirmation">¿Estás seguro de que quieres cerrar sesión?</string>
+    <string name="choose_language">Elegir idioma</string>
+
+    <!-- Languages -->
+    <string name="lang_english">English</string>
+    <string name="lang_urdu">اردو</string>
+    <string name="lang_hindi">हिंदी</string>
+    <string name="lang_arabic">العربية</string>
+    <string name="lang_french">Français</string>
+    <string name="lang_spanish">Español</string>
+    <string name="lang_turkish">Türkçe</string>
+
+    <!-- Laundry Dashboard -->
+    <string name="laundry_title">Revisión de lavado</string>
+    <string name="mark_as_clean">MARCAR COMO LIMPIO</string>
+    <string name="worn_times_format">Usado %d veces desde el último lavado</string>
+    <string name="all_clean">¡Toda tu ropa está fresca y limpia! 🌟</string>
+    <string name="laundry_marked_clean">¡%s marcado como limpio! 🧺</string>
+
+    <!-- Virtual Try-On -->
+    <string name="try_on_title">Prueba virtual</string>
+    <string name="stand_back">Aléjate para que tu torso sea visible</string>
+    <string name="move_back">📷 Aléjate – no se detecta tu cuerpo</string>
+    <string name="capture">CAPTURAR</string>
+    <string name="look_saved">¡Look guardado! ✨ Revisa tu galería.</string>
+
+    <!-- Event Dress Code Advisor -->
+    <string name="advisor_title">Asesor de código de vestimenta</string>
+    <string name="select_event">Seleccionar evento</string>
+    <string name="dress_code_guide">Guía de código de vestimenta</string>
+    <string name="from_wardrobe">De tu guardarropa</string>
+    <string name="plan_this_outfit">PLANEAR ESTE CONJUNTO</string>
+    <string name="job_interview">Entrevista de trabajo</string>
+    <string name="cocktail_party">Cóctel</string>
+    <string name="beach_wedding">Boda en la playa</string>
+    <string name="festive_ethnic">Festivo étnico (Eid/Diwali)</string>
+    <string name="funeral_memorial">Funeral / Conmemoración</string>
+    <string name="black_tie_gala">Gala de etiqueta</string>
+    <string name="first_date">Primera cita</string>
+    <string name="casual_friday">Viernes informal</string>
+    <string name="sports_event">Evento deportivo</string>
+    <string name="destination_wedding">Boda de destino</string>
+    <string name="birthday_party">Fiesta de cumpleaños</string>
+    <string name="business_casual">Informal de negocios</string>
+
+    <!-- Family Closet -->
+    <string name="family_closet_title">Armario familiar</string>
+    <string name="borrow">TOMAR PRESTADO</string>
+    <string name="return_item">DEVOLVER</string>
+    <string name="family_outfit">CONJUNTO FAMILIAR</string>
+    <string name="borrow_success">¡Tomado prestado! Devuelve en 7 días.</string>
+    <string name="invalid_code">Código inválido — verifica e inténtalo de nuevo.</string>
+    <string name="left_group">Has abandonado el grupo.</string>
+    <string name="group_created">¡Grupo creado! Comparte tu código de invitación.</string>
+    <string name="share_message">¡Únete a mi armario familiar en Fashnix! Código: %s</string>
+
+    <!-- Intelligence Hub -->
+    <string name="hub_title">Centro de inteligencia</string>
+    <string name="remix_wardrobe_short">Remezclar mi guardarropa</string>
+    <string name="save_look">GUARDAR LOOK</string>
+    <string name="gap_analyzer">Analizador de carencias</string>
+    <string name="missing_casual_footwear">Te falta calzado informal.</string>
+    <string name="missing_formal">Añade más conjuntos formales a tu guardarropa.</string>
+    <string name="missing_accessories">Tu guardarropa carece de accesorios — un reloj o cinturón marca la diferencia.</string>
+    <string name="suggested_item">Prenda sugerida</string>
+    <string name="capsule_wardrobe">Generador de guardarropa cápsula</string>
+    <string name="destination">Destino</string>
+    <string name="days">Días</string>
+    <string name="trip_type">Tipo de viaje</string>
+    <string name="generate_list">GENERAR LISTA</string>
+    <string name="business_trip">Negocios</string>
+    <string name="beach_trip">Playa</string>
+    <string name="adventure_trip">Aventura</string>
+    <string name="city_break_trip">Escapada urbana</string>
+    <string name="mountain_trip">Montaña</string>
+    <string name="copy_list">COPIAR LISTA</string>
+    <string name="list_copied">¡Lista de equipaje copiada!</string>
+    <string name="cost_per_wear_dashboard">Panel de coste por uso</string>
+    <string name="best_value">Mejor valor 🏆</string>
+    <string name="never_worn_warning">Nunca usado — considera donar</string>
+    <string name="style_challenges">Desafíos de estilo</string>
+    <string name="monochrome_week">Semana monocromática</string>
+    <string name="monochrome_desc">Usa conjuntos de una sola familia de colores durante 7 días.</string>
+    <string name="accessory_week">Semana de accesorios</string>
+    <string name="accessory_desc">Incluye al menos un accesorio en cada conjunto durante 7 días.</string>
+    <string name="formal_week">Semana formal</string>
+    <string name="formal_desc">Usa atuendo formal durante 5 días consecutivos.</string>
+
+    <!-- Style Quiz -->
+    <string name="quiz_colour_palette">¿Paleta de colores preferida?</string>
+    <string name="neutrals">Neutros</string>
+    <string name="bold_bright">Audaces y brillantes</string>
+    <string name="pastels">Pasteles</string>
+    <string name="monochrome">Monocromático</string>
+    <string name="quiz_occasion">¿Ocasión habitual?</string>
+    <string name="work">Trabajo</string>
+    <string name="formal_events">Eventos formales</string>
+    <string name="mixed">Mixto</string>
+    <string name="quiz_inspiration">¿Inspiración de estilo?</string>
+    <string name="classic">Clásico</string>
+    <string name="streetwear">Streetwear</string>
+    <string name="bohemian">Bohemio</string>
+    <string name="minimalist">Minimalista</string>
+    <string name="quiz_silhouette">¿Silueta preferida?</string>
+    <string name="fitted">Ajustada</string>
+    <string name="relaxed">Relajada</string>
+    <string name="structured">Estructurada</string>
+    <string name="flowy">Fluida</string>
+    <string name="quiz_priority">¿Principal prioridad de moda?</string>
+    <string name="comfort">Comodidad</string>
+    <string name="statement">Declaración</string>
+    <string name="versatility">Versatilidad</string>
+    <string name="elegance">Elegancia</string>
+
+    <!-- Style DNA Labels -->
+    <string name="dna_classic_minimalist">Minimalista clásico</string>
+    <string name="dna_bold_trendsetter">Creador de tendencias audaz</string>
+    <string name="dna_casual_comfort">Comodidad informal</string>
+    <string name="dna_elegant_professional">Profesional elegante</string>
+    <string name="dna_bohemian_spirit">Espíritu bohemio</string>
+
+    <!-- Badges -->
+    <string name="badge_7_day_streaker">Racha de 7 días</string>
+    <string name="badge_14_day_streaker">Maravilla de dos semanas</string>
+    <string name="badge_fashion_adventurer">Aventurero de la moda</string>
+    <string name="badge_mix_match_master">Maestro de las combinaciones</string>
+    <string name="badge_family_stylist">Estilista familiar</string>
+    <string name="badge_laundry_hero">Héroe de la lavandería</string>
+    <string name="badge_unlocked_title">🏆 ¡Insignia desbloqueada!</string>
+    <string name="locked">Bloqueada</string>
+    <string name="earned_on">Ganada el %s</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_daily_outfit">Conjunto diario</string>
+    <string name="notification_channel_laundry">Recordatorios de lavado</string>
+    <string name="notification_channel_family">Armario familiar</string>
+    <string name="notification_channel_badges">Insignias y recompensas</string>
+    <string name="notification_time_to_wash_title">¡Hora de lavar! 🧺</string>
+    <string name="notification_time_to_wash_body">Tu %s necesita un lavado.</string>
+    <string name="notification_borrow_title">Prenda prestada</string>
+    <string name="notification_borrow_body">%1$s tomó prestado tu %2$s.</string>
+    <string name="notification_return_title">Prenda devuelta</string>
+    <string name="notification_return_body">%1$s ha devuelto tu %2$s.</string>
+    <string name="notification_reminder_return_title">Recordatorio de devolución</string>
+    <string name="notification_reminder_return_body">¡No olvides devolver %1$s a %2$s!</string>
+
+    <!-- App Actions -->
+    <string name="shortcut_outfit_label">Preguntar a Fashnix qué ponerse</string>
+    <string name="shortcut_outfit_long_label">Obtén una sugerencia diaria de conjunto desde tu guardarropa</string>
+    <string name="shortcut_outfit_query">¿Qué debería ponerme hoy?</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="loading">Cargando…</string>
+    <string name="error_generic">Algo salió mal. Inténtalo de nuevo.</string>
+    <string name="mic_description">Micrófono</string>
+    <string name="send_description">Enviar</string>
+    <!-- Spanish -->
+    <string name="date">Fecha</string>
+    <string name="time">Hora</string>
+</resources>

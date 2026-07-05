@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Premium Animated Backdrop -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/fashion_loading"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        android:alpha="0.04"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/profileToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Profile"
+            app:titleCentered="true"
+            app:titleTextColor="@color/text_primary"
+            app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationIconTint="@color/text_primary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:overScrollMode="never"
+        android:paddingBottom="160dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- High-Tier User Identity -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/profileHeaderCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                style="@style/LuxuryCardStyle"
+                app:strokeColor="@color/border_standard">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="20dp">
+
+                    <View
+                        android:id="@+id/profileCoverWash"
+                        android:layout_width="0dp"
+                        android:layout_height="92dp"
+                        android:alpha="0.34"
+                        android:background="@drawable/bg_profile_header_wash"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <FrameLayout
+                        android:id="@+id/profileAvatarFrame"
+                        android:layout_width="76dp"
+                        android:layout_height="76dp"
+                        android:layout_marginStart="12dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        app:layout_constraintBottom_toBottomOf="@id/profileCoverWash"
+                        app:layout_constraintStart_toStartOf="@id/profileCoverWash"
+                        app:layout_constraintTop_toTopOf="@id/profileCoverWash">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/profileAvatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/surface_elevated"
+                            android:padding="4dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_profile_photo_placeholder"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            app:strokeColor="@color/white"
+                            app:strokeWidth="3dp" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/avatarEditBadge"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="bottom|end"
+                            android:layout_margin="2dp"
+                            android:contentDescription="Change profile photo"
+                            app:cardBackgroundColor="@color/primary"
+                            app:cardCornerRadius="17dp"
+                            app:cardElevation="4dp"
+                            app:strokeColor="@color/white"
+                            app:strokeWidth="2dp">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_camera"
+                                app:tint="@color/white" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.progressindicator.CircularProgressIndicator
+                            android:id="@+id/photoUploadProgress"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:layout_gravity="center"
+                            android:indeterminate="true"
+                            android:visibility="gone"
+                            app:indicatorColor="@color/primary"
+                            app:trackColor="@color/surface_variant"
+                            app:trackThickness="4dp" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/profileIdentityText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="14dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="@id/profileCoverWash"
+                        app:layout_constraintEnd_toEndOf="@id/profileCoverWash"
+                        app:layout_constraintStart_toEndOf="@id/profileAvatarFrame"
+                        app:layout_constraintTop_toTopOf="@id/profileCoverWash">
+
+                        <TextView
+                            android:id="@+id/profileName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Your Style Profile"
+                            android:textColor="@color/text_primary"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif-black"
+                            android:maxLines="2" />
+
+                        <TextView
+                            android:id="@+id/memberTierText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="FASHNIX MEMBER"
+                            android:textColor="@color/primary"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.08" />
+
+                        <TextView
+                            android:id="@+id/changePhotoHint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Tap photo to change"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/border_glass"
+                        app:layout_constraintTop_toBottomOf="@id/profileCoverWash"
+                        android:layout_marginTop="18dp" />
+
+                    <LinearLayout
+                        android:id="@+id/syncRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="18dp"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toBottomOf="@id/divider">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="WARDROBE SYNC"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="8sp"
+                                android:letterSpacing="0.12" />
+                            <TextView
+                                android:id="@+id/syncStatusText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="READY"
+                                android:textColor="@color/text_primary"
+                                android:textSize="13sp"
+                                android:fontFamily="sans-serif-black" />
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/editProfileBtn"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="74dp"
+                            android:minHeight="38dp"
+                            android:text="Edit"
+                            android:textSize="10sp"
+                            app:strokeColor="@color/primary"
+                            android:textColor="@color/primary"
+                            app:cornerRadius="12dp" />
+                    </LinearLayout>
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/prestigeProgress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:progress="84"
+                        app:indicatorColor="@color/primary"
+                        app:trackColor="@color/border_glass"
+                        app:trackThickness="4dp"
+                        app:trackCornerRadius="2dp"
+                        app:layout_constraintTop_toBottomOf="@id/syncRow" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Social Metrics -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                style="@style/LuxuryCardStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:gravity="center">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                        <TextView android:id="@+id/influenceCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.4k" android:textColor="@color/text_primary" android:textSize="18sp" android:fontFamily="sans-serif-black"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LOOKS" android:textColor="@color/text_secondary" android:textSize="8sp"/>
+                    </LinearLayout>
+                    <View android:layout_width="1dp" android:layout_height="30dp" android:background="@color/border_glass"/>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                        <TextView android:id="@+id/stylingCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="850" android:textColor="@color/text_primary" android:textSize="18sp" android:fontFamily="sans-serif-black"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ITEMS" android:textColor="@color/text_secondary" android:textSize="8sp"/>
+                    </LinearLayout>
+                    <View android:layout_width="1dp" android:layout_height="30dp" android:background="@color/border_glass"/>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                        <TextView android:id="@+id/trophyCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14" android:textColor="@color/text_primary" android:textSize="18sp" android:fontFamily="sans-serif-black"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SAVED" android:textColor="@color/text_secondary" android:textSize="8sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Vault Performance -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STYLE OVERVIEW"
+                android:textColor="@color/primary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="16dp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:alignmentMode="alignMargins"
+                android:layout_marginBottom="32dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    style="@style/LuxuryCardStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/vaultWorth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/text_primary"
+                            android:textSize="22sp"
+                            android:fontFamily="sans-serif-black" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="READY ITEMS"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    style="@style/LuxuryCardStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/utilizationScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="92%"
+                            android:textColor="@color/success"
+                            android:textSize="24sp"
+                            android:fontFamily="sans-serif-black" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DEPLOYMENT"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </GridLayout>
+
+            <!-- Vault Composition -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WARDROBE COMPOSITION"
+                android:textColor="@color/primary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                style="@style/LuxuryCardStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="APPAREL" android:textColor="@color/text_primary" android:textSize="11sp"/>
+                        <TextView android:id="@+id/apparelPercentText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="65%" android:textColor="@color/primary" android:textSize="11sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/apparelProgress" android:layout_width="match_parent" android:layout_height="wrap_content" android:progress="65" app:trackThickness="4dp" app:trackCornerRadius="2dp" android:layout_marginTop="8dp" app:indicatorColor="@color/primary" app:trackColor="@color/border_glass"/>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="16dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="FOOTWEAR" android:textColor="@color/text_primary" android:textSize="11sp"/>
+                        <TextView android:id="@+id/footwearPercentText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20%" android:textColor="@color/primary" android:textSize="11sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/footwearProgress" android:layout_width="match_parent" android:layout_height="wrap_content" android:progress="20" app:trackThickness="4dp" app:trackCornerRadius="2dp" android:layout_marginTop="8dp" app:indicatorColor="@color/secondary" app:trackColor="@color/border_glass"/>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="16dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="ACCESSORIES" android:textColor="@color/text_primary" android:textSize="11sp"/>
+                        <TextView android:id="@+id/accessoriesPercentText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15%" android:textColor="@color/primary" android:textSize="11sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/accessoriesProgress" android:layout_width="match_parent" android:layout_height="wrap_content" android:progress="15" app:trackThickness="4dp" app:trackCornerRadius="2dp" android:layout_marginTop="8dp" app:indicatorColor="@color/primary" app:trackColor="@color/border_glass"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Activity Stream -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RECENT PROTOCOLS"
+                android:textColor="@color/primary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                style="@style/LuxuryCardStyle">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/activityRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    tools:listitem="@layout/item_activity_row" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Style Archetype Deep-Dive -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                style="@style/LuxuryCardStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="28dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ARCHETYPE PROTOCOL"
+                        android:textColor="@color/primary"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/styleDNADesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="You favor architectural silhouettes and a monochromatic spectrum. AI suggests integrating subtle textures to maintain elite dominance."
+                        android:textColor="@color/text_primary"
+                        android:textSize="15sp"
+                        android:lineSpacingMultiplier="1.3" />
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+                        <com.google.android.material.chip.Chip style="@style/Widget.Material3.Chip.Assist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MINIMALIST" app:chipBackgroundColor="@color/surface_variant" android:textColor="@color/text_primary"/>
+                        <com.google.android.material.chip.Chip style="@style/Widget.Material3.Chip.Assist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXECUTIVE" app:chipBackgroundColor="@color/surface_variant" android:textColor="@color/text_primary"/>
+                        <com.google.android.material.chip.Chip style="@style/Widget.Material3.Chip.Assist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PURE" app:chipBackgroundColor="@color/surface_variant" android:textColor="@color/text_primary"/>
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Configuration Protocols -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SYSTEM CONFIGURATION"
+                android:textColor="@color/primary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/languageCard"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginBottom="12dp"
+                style="@style/LuxuryCardStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="24dp">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_globe" app:tint="@color/primary" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="LANGUAGE" android:textColor="@color/text_primary" android:layout_marginStart="20dp" android:fontFamily="sans-serif-black" android:textSize="13sp" />
+                    <TextView android:id="@+id/currentLanguage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ENGLISH" android:textColor="@color/primary" android:fontFamily="sans-serif-black" android:textSize="11sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/logoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                style="@style/LuxuryCardStyle"
+                app:strokeColor="@color/error">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="24dp">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_close" app:tint="@color/error" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LOG OUT" android:textColor="@color/error" android:layout_marginStart="20dp" android:fontFamily="sans-serif-black" android:textSize="13sp" android:letterSpacing="0.05" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="@color/surface_glass"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/border_glass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/activityIndicator"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/circle_bg"
+            android:backgroundTint="@color/primary" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/activityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROTOCOL DEPLOYED"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-black"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/activityDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supreme Selection synced with Vault."
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activityTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:20"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

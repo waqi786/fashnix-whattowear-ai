@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LuxuryCardStyle"
+    android:layout_width="300dp"
+    android:layout_height="140dp"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/suggestionImage"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_wardrobe_placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedImageView"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="1dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnAction"
+            app:layout_constraintStart_toEndOf="@id/suggestionImage"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/suggestionBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BRAND"
+                android:textColor="@color/primary"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/suggestionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Item Name"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-black"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/suggestionPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="ADD ITEM"
+                android:textColor="@color/primary"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/suggestionReason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="AI Recommendation"
+                android:textColor="@color/text_secondary"
+                android:textSize="10sp"
+                android:alpha="0.8"
+                android:ellipsize="end"
+                android:maxLines="2" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnAction"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_circle_glass"
+            android:padding="10dp"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/primary" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

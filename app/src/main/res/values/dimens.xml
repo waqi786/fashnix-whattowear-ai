@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Professional Spacing Grid -->
+    <dimen name="spacing_xxs">4dp</dimen>
+    <dimen name="spacing_xs">8dp</dimen>
+    <dimen name="spacing_s">12dp</dimen>
+    <dimen name="spacing_m">16dp</dimen>
+    <dimen name="spacing_l">20dp</dimen>
+    <dimen name="spacing_xl">24dp</dimen>
+    <dimen name="spacing_xxl">32dp</dimen>
+
+    <!-- Card & UI Standard Margins -->
+    <dimen name="card_margin_horizontal">16dp</dimen>
+    <dimen name="card_margin_vertical">8dp</dimen>
+    <dimen name="card_corner_radius">24dp</dimen>
+
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+
+    <dimen name="radius_small">12dp</dimen>
+    <dimen name="radius_medium">20dp</dimen>
+    <dimen name="radius_large">32dp</dimen>
+
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+
+    <!-- Chip Specific -->
+    <dimen name="chip_stroke_width">1dp</dimen>
+</resources>

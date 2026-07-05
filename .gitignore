@@ -1,0 +1,33 @@
+# Android / Gradle
+.gradle/
+build/
+app/build/
+local.properties
+
+# Release signing and private configuration
+*.jks
+*.keystore
+keystore.properties
+google-services.json
+*.env
+.env*
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# Firebase / Node
+functions/node_modules/
+firebase-debug.log
+ui-debug.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated reports and temporary files
+*.log
+*.tmp
+*.bak

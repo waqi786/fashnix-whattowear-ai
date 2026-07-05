@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Premium Backdrop -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/fashion_loading"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        android:alpha="0.03"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/cpwToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationIconTint="@color/text_primary"
+            app:title="INVESTMENT ANALYTICS"
+            app:titleCentered="true"
+            app:titleTextColor="@color/text_primary"
+            app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:overScrollMode="never"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Luxury Valuation Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="@color/surface_glass"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1.5dp"
+                app:strokeColor="@color/primary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="28dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOTAL WARDROBE VALUE"
+                        android:textColor="@color/primary"
+                        android:textSize="10sp"
+                        android:letterSpacing="0.2"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/totalValueText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$12,450.00"
+                        android:textColor="@color/white"
+                        android:textSize="36sp"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginTop="8dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/border_glass"
+                        android:layout_marginVertical="24dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AVG CPW"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="9sp"
+                                android:letterSpacing="0.1"/>
+                            <TextView
+                                android:id="@+id/avgCpwText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$2.40"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:fontFamily="sans-serif-medium" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="end">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BEST ROI"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="9sp"
+                                android:letterSpacing="0.1"/>
+                            <TextView
+                                android:id="@+id/bestInvestmentText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Silk Suit"
+                                android:textColor="@color/success"
+                                android:textSize="18sp"
+                                android:fontFamily="sans-serif-medium" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ITEM BREAKDOWN"
+                android:textColor="@color/primary"
+                android:textSize="11sp"
+                android:letterSpacing="0.2"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cpwRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                tools:listitem="@layout/item_clothing_card" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

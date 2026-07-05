@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Premium Glow Overlay -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/fashion_loading"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        android:alpha="0.03"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/tryOnToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationIconTint="@color/text_primary"
+            app:title="VIRTUAL MIRROR"
+            app:titleCentered="true"
+            app:titleTextColor="@color/text_primary"
+            app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- Main Display Area (The Magic Mirror) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mirrorCard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="24dp"
+            app:cardBackgroundColor="@color/surface_glass"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="1.5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/controlsCard">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/basePersonImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:alpha="0.9"
+                    android:src="@drawable/ic_profile"
+                    android:contentDescription="Mirror person preview"
+                    tools:src="@drawable/ic_profile" />
+
+                <!-- The overlaying garment (Expert simulation feel) -->
+                <ImageView
+                    android:id="@+id/garmentOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:padding="60dp"
+                    android:alpha="0.8"
+                    android:src="@drawable/ic_hanger"
+                    android:contentDescription="Selected garment overlay"
+                    tools:src="@drawable/ic_hanger" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_bottom_overlay"
+                    android:alpha="0.3"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/scanningEffect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:lottie_rawRes="@raw/fashion_loading"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    android:visibility="gone"
+                    android:alpha="0.4" />
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Glass Controls for Adjustment -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/controlsCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:layout_marginBottom="100dp"
+            app:cardBackgroundColor="@color/surface_glass"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/border_glass"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STYLE SIMULATION"
+                    android:textColor="@color/primary"
+                    android:textSize="10sp"
+                    android:letterSpacing="0.2"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btnUploadSelfie"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_circle_glass"
+                        android:contentDescription="Upload mirror photo"
+                        android:src="@drawable/ic_camera"
+                        app:tint="@color/white" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/generateLookButton"
+                        style="@style/LuxuryButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="16dp"
+                        android:text="GENERATE LOOK"
+                        android:backgroundTint="@color/primary" />
+
+                    <ImageButton
+                        android:id="@+id/btnDownload"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_circle_glass"
+                        android:contentDescription="Reset mirror"
+                        android:src="@drawable/ic_refresh"
+                        app:tint="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

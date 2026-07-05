@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_couture_canvas"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- Elite Edge-to-Edge Navigation Host -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/navHostFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIconTint="@color/primary"
+            app:titleTextColor="@color/primary"
+            app:titleCentered="true"
+            app:titleTextAppearance="@style/TextAppearance.Fashnix.TitleLarge" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:id="@+id/bottomNavScrim"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/bg_bottom_nav_scrim"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Floating glass dock navigation -->
+    <FrameLayout
+        android:id="@+id/bottomNavCard"
+        android:layout_width="0dp"
+        android:layout_height="104dp"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginBottom="12dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.fashnix.app.ui.main.BottomDockBackgroundView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/bottomNavRow"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_gravity="bottom"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp">
+
+            <LinearLayout
+                android:id="@+id/navHomeItem"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="6dp">
+
+                <ImageView
+                    android:id="@+id/navHomeIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_home"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    android:id="@+id/navHomeLabel"
+                    style="@style/TextAppearance.Fashnix.NavLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="Home"
+                    android:textColor="@color/primary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navClosetItem"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="6dp">
+
+                <ImageView
+                    android:id="@+id/navClosetIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_hanger"
+                    app:tint="@color/nav_item_unselected" />
+
+                <TextView
+                    android:id="@+id/navClosetLabel"
+                    style="@style/TextAppearance.Fashnix.NavLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="Closet"
+                    android:textColor="@color/nav_item_unselected" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/navAiItem"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="6dp">
+
+                <ImageView
+                    android:id="@+id/navAiIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_sparkle"
+                    app:tint="@color/nav_item_unselected" />
+
+                <TextView
+                    android:id="@+id/navAiLabel"
+                    style="@style/TextAppearance.Fashnix.NavLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="AI"
+                    android:textColor="@color/nav_item_unselected" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navProfileItem"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="6dp">
+
+                <ImageView
+                    android:id="@+id/navProfileIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_profile"
+                    app:tint="@color/nav_item_unselected" />
+
+                <TextView
+                    android:id="@+id/navProfileLabel"
+                    style="@style/TextAppearance.Fashnix.NavLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="Profile"
+                    android:textColor="@color/nav_item_unselected" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/centerScanFab"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="Scan outfit"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:translationY="-45dp"
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/bottomNavCard"
+        app:layout_constraintEnd_toEndOf="@id/bottomNavCard"
+        app:layout_constraintStart_toStartOf="@id/bottomNavCard"
+        app:strokeColor="@color/primary_light"
+        app:strokeWidth="2dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_camera"
+                app:tint="@color/black" />
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

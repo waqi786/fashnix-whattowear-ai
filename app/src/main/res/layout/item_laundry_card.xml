@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LuxuryCardStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/laundryImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_wardrobe_placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CircleImageView"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="1.5dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/markCleanButton"
+            app:layout_constraintStart_toEndOf="@id/laundryImage"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/laundryItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Premium Cotton"
+                android:textColor="@color/text_primary"
+                android:textSize="17sp"
+                android:fontFamily="sans-serif-black" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/laundryStatusChip"
+                style="@style/Widget.Material3.Chip.Assist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="10sp"
+                app:chipCornerRadius="8dp"
+                tools:text="NEEDS WASH" />
+
+            <TextView
+                android:id="@+id/wornSinceWash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Worn 3 times"
+                android:textColor="@color/primary"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.05" />
+
+            <TextView
+                android:id="@+id/laundryItemCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APPAREL"
+                android:textColor="@color/text_secondary"
+                android:textSize="10sp"
+                android:textAllCaps="true"
+                android:alpha="0.6"
+                android:letterSpacing="0.1" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/markCleanButton"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            app:icon="@drawable/ic_laundry_clean"
+            app:iconTint="@color/primary"
+            android:background="@drawable/bg_circle_glass"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

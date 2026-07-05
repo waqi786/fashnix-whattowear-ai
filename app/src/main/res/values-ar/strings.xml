@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">فاشنكس</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">امسح خزانة ملابسك</string>
+    <string name="onboarding_subtitle_1">دع الذكاء الاصطناعي يتعرف فوراً على ملابسك وألوانها والمناسبات.</string>
+    <string name="onboarding_title_2">احصل على نصائح أنيقة من الذكاء الاصطناعي</string>
+    <string name="onboarding_subtitle_2">مصممك الشخصي يعرف خزانتك ويقدم لك اقتراحات رائعة.</string>
+    <string name="onboarding_title_3">خطط لأزيائك</string>
+    <string name="onboarding_subtitle_3">نظّم الإطلالات للأسبوع، السفر، والمناسبات — مع تذكيرات.</string>
+    <string name="skip">تخطي</string>
+    <string name="next">التالي</string>
+    <string name="join_the_elite">انضم إلى النخبة</string>
+
+    <!-- Auth -->
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="full_name">الاسم الكامل</string>
+    <string name="gender">الجنس</string>
+    <string name="body_type">نوع الجسم</string>
+    <string name="men">رجال</string>
+    <string name="women">نساء</string>
+    <string name="unisex">للجنسين</string>
+    <string name="slim">نحيف</string>
+    <string name="athletic">رياضي</string>
+    <string name="plus_size">مقاس كبير</string>
+    <string name="initialize_session">بدء الجلسة</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="forgot_password">نسيت كلمة المرور؟</string>
+    <string name="dont_have_account">ليس لديك حساب؟ سجّل الآن</string>
+    <string name="already_have_account">لديك حساب بالفعل؟ سجّل الدخول</string>
+    <string name="send_reset_email">إرسال بريد إعادة التعيين</string>
+    <string name="reset_email_sent">تم إرسال بريد إعادة تعيين كلمة المرور.</string>
+    <string name="field_required">هذا الحقل مطلوب</string>
+    <string name="passwords_do_not_match">كلمتا المرور غير متطابقتين</string>
+    <string name="invalid_email">صيغة البريد الإلكتروني غير صالحة</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_wardrobe">الخزانة</string>
+    <string name="nav_scan">مسح</string>
+    <string name="nav_chat">دردشة AI</string>
+    <string name="nav_planner">المخطط</string>
+
+    <!-- Home Screen -->
+    <string name="weather_unavailable">الطقس غير متاح</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="today_pick">اختيار اليوم</string>
+    <string name="wear_this">ارتدِ هذا</string>
+    <string name="surprise_me">فاجئني</string>
+    <string name="try_on">تجربة</string>
+    <string name="smart_scan">مسح ذكي</string>
+    <string name="import_item">استيراد</string>
+    <string name="laundry_check">🧺 فحص الغسيل</string>
+    <string name="recent_scans">المسوحات الأخيرة</string>
+    <string name="remix_wardrobe">إعادة مزج الخزانة</string>
+    <string name="ask_ai_stylist">هل تحتاج نصيحة لإطلالتك؟ مصممك الشخصي الذكي جاهز.</string>
+    <string name="chat_now">دردش الآن</string>
+    <string name="streak_format">🔥 %d أيام متتالية!</string>
+    <string name="event_advisor">تستعد لمناسبة؟</string>
+    <string name="get_advice">احصل على نصيحة</string>
+    <string name="high_uv_warning">اليوم مؤشر الأشعة فوق البنفسجية %.0f – ارتدِ أكماماً كاملة ونظارات شمسية</string>
+
+    <!-- Weather -->
+    <string name="rainy_tip">يوم ممطر – حذاء مقاوم للماء ومعطف ترنش مثاليان!</string>
+    <string name="sunny_tip">شمس ساطعة – الألوان الفاتحة والقبعة رائعة.</string>
+    <string name="cold_tip">يوم بارد – ارتدِ طبقات مع سترة أنيقة.</string>
+    <string name="hot_tip">حار جداً – الأقمشة القابلة للتنفس هي صديقتك.</string>
+    <string name="cloudy_tip">غائم – لمسة من الألوان الزاهية ترفع المزاج.</string>
+
+    <!-- Wardrobe Screen -->
+    <string name="wardrobe_title">الخزانة</string>
+    <string name="search_hint">ابحث في خزانتك…</string>
+    <string name="filter_category">الفئة</string>
+    <string name="filter_colour">اللون</string>
+    <string name="filter_occasion">المناسبة</string>
+    <string name="all">الكل</string>
+    <string name="accessories_result">إكسسوارات</string>
+    <string name="apparel">ملابس</string>
+    <string name="footwear">أحذية</string>
+    <string name="personal_care">عناية شخصية</string>
+    <string name="show_family_items">إظهار أغراض العائلة</string>
+    <string name="scan_item">مسح قطعة</string>
+    <string name="worn_format">تم الارتداء: %d</string>
+    <string name="colour_selector">اختر اللون</string>
+    <string name="edit">تعديل</string>
+    <string name="delete">حذف</string>
+    <string name="mark_as_worn">وضع علامة "تم الارتداء"</string>
+    <string name="match_accessories">تنسيق الإكسسوارات</string>
+
+    <!-- Clothing Detail Screen -->
+    <string name="details">التفاصيل</string>
+    <string name="metrics">المقاييس</string>
+    <string name="laundry">الغسيل</string>
+    <string name="cost_per_wear">تكلفة كل ارتداء</string>
+    <string name="sustainability_score">درجة الاستدامة</string>
+    <string name="last_worn">آخر ارتداء</string>
+    <string name="never">أبداً</string>
+    <string name="remind_me_to_wash">ذكّرني بالغسيل</string>
+    <string name="wash_interval">اغسل كل X ارتداء</string>
+    <string name="delete_confirmation">إزالة \'%s\' من الخزانة؟ لا يمكن التراجع عن ذلك.</string>
+    <string name="cancel">إلغاء</string>
+    <string name="save">حفظ</string>
+    <string name="saving">جارٍ الحفظ…</string>
+    <string name="item_marked_worn">تم وضع علامة على %s!</string>
+    <string name="edit_item">تعديل القطعة</string>
+
+    <!-- Camera Screen -->
+    <string name="grant_permission">منح الإذن</string>
+    <string name="camera_permission_rationale">الوصول إلى الكاميرا ضروري لمسح الملابس.</string>
+    <string name="retry_shot">إعادة الالتقاط</string>
+    <string name="use_photo">استخدام</string>
+
+    <!-- Scan Result Screen -->
+    <string name="ai_analysis">نتائج تحليل AI</string>
+    <string name="category_label">الفئة</string>
+    <string name="colour_label">اللون</string>
+    <string name="occasion_label">المناسبة</string>
+    <string name="gender_label">الجنس</string>
+    <string name="tap_to_choose_colour">لسنا متأكدين من اللون — يرجى النقر للاختيار</string>
+    <string name="add_to_wardrobe">إضافة إلى الخزانة</string>
+    <string name="styling_tips">نصائح التنسيق</string>
+    <string name="accessories">إكسسوارات</string>
+    <string name="added_to_wardrobe">تمت الإضافة إلى الخزانة!</string>
+    <string name="uploading">جارٍ الرفع…</string>
+    <string name="change_occasion">تغيير المناسبة</string>
+    <string name="change_colour">تغيير اللون</string>
+
+    <!-- Chat Screen -->
+    <string name="style_assistant">مساعد الموضة</string>
+    <string name="clear_chat">مسح الدردشة</string>
+    <string name="welcome_chat">👗 مرحباً، أنا مصممك الذكي! أعرف خزانتك وأستطيع مساعدتك بأفكار الأزياء، ملابس المناسبات، قوائم السفر والمزيد. اسأل ما تشاء!</string>
+    <string name="quick_wear_today">ماذا أرتدي اليوم؟</string>
+    <string name="quick_style_suit">كيف أنسق بدلتي الكحلية؟</string>
+    <string name="quick_packing">قائمة سفر نهاية الأسبوع؟</string>
+    <string name="quick_event">قواعد لباس المناسبات</string>
+    <string name="quick_match_blue">ما يناسب قميصي الأزرق؟</string>
+    <string name="message_hint">اسأل فاشنكس…</string>
+    <string name="voice_input_unavailable">الإدخال الصوتي غير متاح</string>
+    <string name="error_chat_fallback">تعذر الاتصال. يرجى المحاولة مرة أخرى.</string>
+    <string name="retry_chat">إعادة المحاولة</string>
+
+    <!-- Planner Screen -->
+    <string name="planner_title">مخطط الأزياء</string>
+    <string name="add_outfit">أضف إطلالة</string>
+    <string name="outfit_name">اسم الإطلالة</string>
+    <string name="select_items">اختر القطع</string>
+    <string name="set_reminder">تعيين تذكير</string>
+    <string name="mood">المزاج</string>
+    <string name="notes">ملاحظات</string>
+    <string name="confident">واثق</string>
+    <string name="comfortable">مريح</string>
+    <string name="bold">جريء</string>
+    <string name="professional">مهني</string>
+    <string name="casual">كاجوال</string>
+    <string name="festive">احتفالي</string>
+    <string name="mark_as_worn_outfit">وضع علامة "تم الارتداء"</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">الملف الشخصي</string>
+    <string name="style_dna">حمض الموضة النووي</string>
+    <string name="discover_style">اكتشف أسلوبك</string>
+    <string name="preferences">التفضيلات</string>
+    <string name="favourite_occasions">المناسبات المفضلة</string>
+    <string name="favourite_colours">الألوان المفضلة</string>
+    <string name="skin_tone">لون البشرة</string>
+    <string name="streak_badges">التتابع والشارات</string>
+    <string name="view_all_badges">عرض كل الشارات</string>
+    <string name="language">اللغة</string>
+    <string name="family_closet">خزانة العائلة</string>
+    <string name="create_new_group">إنشاء مجموعة جديدة</string>
+    <string name="join_with_code">انضم برمز</string>
+    <string name="invite_code">رمز الدعوة</string>
+    <string name="copy_code">نسخ الرمز</string>
+    <string name="share_code">مشاركة</string>
+    <string name="leave_group">مغادرة المجموعة</string>
+    <string name="wardrobe_insights">رؤى الخزانة</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="logout_confirmation">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
+    <string name="choose_language">اختر اللغة</string>
+
+    <!-- Languages -->
+    <string name="lang_english">English</string>
+    <string name="lang_urdu">اردو</string>
+    <string name="lang_hindi">हिंदी</string>
+    <string name="lang_arabic">العربية</string>
+    <string name="lang_french">Français</string>
+    <string name="lang_spanish">Español</string>
+    <string name="lang_turkish">Türkçe</string>
+
+    <!-- Laundry Dashboard -->
+    <string name="laundry_title">فحص الغسيل</string>
+    <string name="mark_as_clean">وضع علامة "نظيف"</string>
+    <string name="worn_times_format">تم الارتداء %d مرات منذ آخر غسلة</string>
+    <string name="all_clean">كل ملابسك نظيفة ومنعشة! 🌟</string>
+    <string name="laundry_marked_clean">تم وضع علامة على %s كنظيف! 🧺</string>
+
+    <!-- Virtual Try-On -->
+    <string name="try_on_title">التجربة الافتراضية</string>
+    <string name="stand_back">قف للخلف ليظهر جذعك كاملاً</string>
+    <string name="move_back">📷 تحرك للخلف – لا يمكن اكتشاف جسمك</string>
+    <string name="capture">التقاط</string>
+    <string name="look_saved">تم حفظ الإطلالة! ✨ تفقد المعرض.</string>
+
+    <!-- Event Dress Code Advisor -->
+    <string name="advisor_title">مستشار قواعد لباس المناسبات</string>
+    <string name="select_event">اختر المناسبة</string>
+    <string name="dress_code_guide">دليل قواعد اللباس</string>
+    <string name="from_wardrobe">من خزانتك</string>
+    <string name="plan_this_outfit">خطط لهذه الإطلالة</string>
+    <string name="job_interview">مقابلة عمل</string>
+    <string name="cocktail_party">حفل كوكتيل</string>
+    <string name="beach_wedding">زفاف على الشاطئ</string>
+    <string name="festive_ethnic">مناسبة عرقية/ عيد</string>
+    <string name="funeral_memorial">عزاء/ تأبين</string>
+    <string name="black_tie_gala">حفل بلاك تاي</string>
+    <string name="first_date">موعد أول</string>
+    <string name="casual_friday">جمعة كاجوال</string>
+    <string name="sports_event">حدث رياضي</string>
+    <string name="destination_wedding">زفاف خارج المدينة</string>
+    <string name="birthday_party">حفلة عيد ميلاد</string>
+    <string name="business_casual">كاجوال رسمي</string>
+
+    <!-- Family Closet -->
+    <string name="family_closet_title">خزانة العائلة</string>
+    <string name="borrow">استعارة</string>
+    <string name="return_item">إرجاع</string>
+    <string name="family_outfit">إطلالة عائلية</string>
+    <string name="borrow_success">تمت الاستعارة! الإرجاع خلال 7 أيام.</string>
+    <string name="invalid_code">رمز غير صحيح – يرجى التحقق والمحاولة مرة أخرى.</string>
+    <string name="left_group">لقد غادرت المجموعة.</string>
+    <string name="group_created">تم إنشاء المجموعة! شارك رمز الدعوة.</string>
+    <string name="share_message">انضم إلى خزانة عائلتي في فاشنكس! الرمز: %s</string>
+
+    <!-- Intelligence Hub -->
+    <string name="hub_title">مركز الذكاء</string>
+    <string name="remix_wardrobe_short">إعادة مزج الخزانة</string>
+    <string name="save_look">حفظ الإطلالة</string>
+    <string name="gap_analyzer">محلل النواقص</string>
+    <string name="missing_casual_footwear">ينقصك حذاء كاجوال.</string>
+    <string name="missing_formal">أضف المزيد من الملابس الرسمية لخزانتك.</string>
+    <string name="missing_accessories">تفتقر خزانتك للإكسسوارات – ساعة أو حزام يصنع فارقاً كبيراً.</string>
+    <string name="suggested_item">قطعة مقترحة</string>
+    <string name="capsule_wardrobe">مولد خزانة مصغرة</string>
+    <string name="destination">الوجهة</string>
+    <string name="days">الأيام</string>
+    <string name="trip_type">نوع الرحلة</string>
+    <string name="generate_list">توليد القائمة</string>
+    <string name="business_trip">عمل</string>
+    <string name="beach_trip">شاطئ</string>
+    <string name="adventure_trip">مغامرة</string>
+    <string name="city_break_trip">جولة مدينة</string>
+    <string name="mountain_trip">جبال</string>
+    <string name="copy_list">نسخ القائمة</string>
+    <string name="list_copied">تم نسخ قائمة التعبئة!</string>
+    <string name="cost_per_wear_dashboard">لوحة تكلفة كل ارتداء</string>
+    <string name="best_value">أفضل قيمة 🏆</string>
+    <string name="never_worn_warning">لم يُرتدَ أبداً – فكر في التبرع</string>
+    <string name="style_challenges">تحديات الموضة</string>
+    <string name="monochrome_week">أسبوع اللون الواحد</string>
+    <string name="monochrome_desc">ارتدِ ملابس من عائلة لونية واحدة لمدة 7 أيام.</string>
+    <string name="accessory_week">أسبوع الإكسسوارات</string>
+    <string name="accessory_desc">أضف إكسسواراً واحداً على الأقل لكل إطلالة لمدة 7 أيام.</string>
+    <string name="formal_week">الأسبوع الرسمي</string>
+    <string name="formal_desc">ارتدِ ملابس رسمية لمدة 5 أيام متتالية.</string>
+
+    <!-- Style Quiz -->
+    <string name="quiz_colour_palette">لوحة الألوان المفضلة؟</string>
+    <string name="neutrals">محايدة</string>
+    <string name="bold_bright">جريئة ومشرقة</string>
+    <string name="pastels">باستيل</string>
+    <string name="monochrome">أحادي اللون</string>
+    <string name="quiz_occasion">المناسبة المعتادة؟</string>
+    <string name="work">عمل</string>
+    <string name="formal_events">مناسبات رسمية</string>
+    <string name="mixed">متنوع</string>
+    <string name="quiz_inspiration">إلهام الموضة؟</string>
+    <string name="classic">كلاسيكي</string>
+    <string name="streetwear">أزياء الشارع</string>
+    <string name="bohemian">بوهيمي</string>
+    <string name="minimalist">متبسط</string>
+    <string name="quiz_silhouette">القصة المفضلة؟</string>
+    <string name="fitted">محدد</string>
+    <string name="relaxed">مرتاح</string>
+    <string name="structured">مهيكل</string>
+    <string name="flowy">منسدل</string>
+    <string name="quiz_priority">أولوية الموضة الأساسية؟</string>
+    <string name="comfort">الراحة</string>
+    <string name="statement">الإطلالة الجريئة</string>
+    <string name="versatility">تعدد الاستخدامات</string>
+    <string name="elegance">الأناقة</string>
+
+    <!-- Style DNA Labels -->
+    <string name="dna_classic_minimalist">كلاسيكي متبسط</string>
+    <string name="dna_bold_trendsetter">جريء صانع صيحات</string>
+    <string name="dna_casual_comfort">راحة كاجوال</string>
+    <string name="dna_elegant_professional">مهني أنيق</string>
+    <string name="dna_bohemian_spirit">روح بوهيمية</string>
+
+    <!-- Badges -->
+    <string name="badge_7_day_streaker">متتابع الـ7 أيام</string>
+    <string name="badge_14_day_streaker">أعجوبة الأسبوعين</string>
+    <string name="badge_fashion_adventurer">مغامر الموضة</string>
+    <string name="badge_mix_match_master">مايسترو التنسيق</string>
+    <string name="badge_family_stylist">مصمم العائلة</string>
+    <string name="badge_laundry_hero">بطل الغسيل</string>
+    <string name="badge_unlocked_title">🏆 تم فتح الشارة!</string>
+    <string name="locked">مقفل</string>
+    <string name="earned_on">تم الحصول عليها في %s</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_daily_outfit">الإطلالة اليومية</string>
+    <string name="notification_channel_laundry">تذكيرات الغسيل</string>
+    <string name="notification_channel_family">خزانة العائلة</string>
+    <string name="notification_channel_badges">الشارات والمكافآت</string>
+    <string name="notification_time_to_wash_title">حان وقت الغسيل! 🧺</string>
+    <string name="notification_time_to_wash_body">%s بحاجة للغسيل.</string>
+    <string name="notification_borrow_title">تمت استعارة قطعة</string>
+    <string name="notification_borrow_body">%1$s استعار %2$s الخاص بك.</string>
+    <string name="notification_return_title">تم إرجاع قطعة</string>
+    <string name="notification_return_body">%1$s أرجع %2$s الخاص بك.</string>
+    <string name="notification_reminder_return_title">تذكير بالإرجاع</string>
+    <string name="notification_reminder_return_body">لا تنسَ إرجاع %1$s إلى %2$s!</string>
+
+    <!-- App Actions -->
+    <string name="shortcut_outfit_label">اسأل فاشنكس ماذا ترتدي</string>
+    <string name="shortcut_outfit_long_label">احصل على اقتراح إطلالة يومية من خزانتك</string>
+    <string name="shortcut_outfit_query">ماذا يجب أن أرتدي اليوم؟</string>
+
+    <!-- General -->
+    <string name="ok">موافق</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="loading">جارٍ التحميل…</string>
+    <string name="error_generic">حدث خطأ ما. يرجى المحاولة مرة أخرى.</string>
+    <string name="mic_description">ميكروفون</string>
+    <string name="send_description">إرسال</string>
+    <!-- Arabic -->
+    <string name="date">التاريخ</string>
+    <string name="time">الوقت</string>
+</resources>

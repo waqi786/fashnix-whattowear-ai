@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/fashion_loading"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        android:alpha="0"
+        android:visibility="gone"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/closetToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="FAMILY CLOSET"
+            app:titleCentered="true"
+            app:titleTextColor="@color/text_primary"
+            app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:overScrollMode="never"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- No Group State -->
+            <LinearLayout
+                android:id="@+id/noGroupState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="visible"
+                android:padding="18dp">
+
+                <ImageView
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:src="@drawable/ic_family_empty"
+                    app:tint="@color/primary"
+                    android:alpha="0.5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share your closet"
+                    android:textColor="@color/text_primary"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginTop="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Let friends or family preview outfit ideas, vote quickly, and avoid duplicate shopping."
+                    android:textColor="@color/text_secondary"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/createGroupButton"
+                    style="@style/LuxuryButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="32dp"
+                    android:text="CREATE SHARE LINK" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/joinGroupButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="12dp"
+                    android:text="JOIN WITH CODE"
+                    android:textColor="@color/primary"
+                    app:strokeColor="@color/border_glass" />
+            </LinearLayout>
+
+            <!-- Active Vault Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/groupState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="@color/surface_glass"
+                app:cardCornerRadius="32dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/border_glass"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="28dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRIVATE SHARED WARDROBE"
+                        android:textColor="@color/primary"
+                        android:textSize="10sp"
+                        android:letterSpacing="0.2"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/groupName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The Prestige Family"
+                        android:textColor="@color/text_primary"
+                        android:textSize="24sp"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/memberCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 Members"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:id="@+id/inviteCodeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="sans-serif-black"
+                        android:letterSpacing="0.12"
+                        android:text="INVITE CODE  FX-7421"
+                        android:textColor="@color/primary"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Share this code with friends or family. They can view outfit ideas and help choose looks."
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/memberList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_badge_card" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/inviteMemberButton"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+ INVITE MEMBER"
+                        android:textColor="@color/primary"
+                        android:layout_marginTop="16dp" />
+
+                    <LinearLayout
+                        android:id="@+id/sharePreviewRows"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:text="SHARED PERMISSIONS"
+                            android:textColor="@color/text_primary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="View closet only  •  Vote on outfits  •  No edit access"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Best for: family approval, friend feedback, shared event planning"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/familyOutfitButton"
+                style="@style/LuxuryButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="GENERATE GROUP LOOK"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

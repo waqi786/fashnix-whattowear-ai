@@ -25,7 +25,7 @@ The project is structured as a production-style Android app with Firebase Authen
 - Authentication flow with login, create account, responsive layouts, and branded onboarding.
 - Personal style profile with avatar upload, wardrobe sync status, badges, activity history, and account actions.
 - Wardrobe gallery for clothing items, item detail screens, metadata, categories, colors, occasions, and ownership tracking.
-- AI clothing scan using local model assets and camera-based item capture.
+- AI clothing scan using local model assets and camera-based item capture
 - AI stylist chat powered through Firebase Cloud Functions and OpenAI server-side secrets.
 - Daily outfit studio with suggested looks, weather-aware inspiration, and saved wardrobe context.
 - Intelligence Hub with remix generator, gap analyzer, event advisor, wardrobe analytics, capsule tools, cost-per-wear, and style challenges.

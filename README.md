@@ -14,7 +14,7 @@
   <img alt="TensorFlow Lite" src="https://img.shields.io/badge/TensorFlow%20Lite-On--Device%20AI-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
 </p>
 
-## Overview
+## Overview:
 
 Fashnix is a mobile AI fashion assistant built for people who want quick, practical outfit decisions from their own wardrobe. The app helps users create a style profile, scan clothing items, save wardrobe pieces, receive outfit ideas, chat with an AI stylist, plan looks for events, and manage closet activity from one polished Android experience.
 
